@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "B9Tech Consults - Benign Technology for Nigeria",
   description:
     "Nigerian-owned innovation lab building ethical technology solutions. Home of B3 (BringBackBarter) - the people's trading platform.",
-    generator: 'v0.dev'
+  generator: 'Next.js'
 }
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange={false}>
           {children}
         </ThemeProvider>

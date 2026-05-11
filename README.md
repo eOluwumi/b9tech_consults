@@ -1,30 +1,42 @@
 # B9Tech Consults
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/virusshare224-2582s-projects/v0-b9-tech-consults)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/TXo229Ihykq)
+B9TECH CONSULTS is live. This repository contains the production Next.js site for B9TECH CONSULTS, the Nigerian innovation lab behind ethical AI solutions and the flagship B3 (BringBackBarter) platform.
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+The live site showcases B9TECH CONSULTS services, the B3 commerce platform, testimonials, portfolio highlights, newsletter sign-up, and contact flows.
+
+## Local development
+
+Install dependencies:
+
+```bash
+pnpm install
+```
+
+Run the site locally:
+
+```bash
+pnpm dev
+```
+
+Build for production:
+
+```bash
+pnpm build
+```
 
 ## Deployment
 
-Your project is live at:
+The site is live and ready for continuous updates. Deploy from this repository with your preferred hosting provider.
 
-**[https://vercel.com/virusshare224-2582s-projects/v0-b9-tech-consults](https://vercel.com/virusshare224-2582s-projects/v0-b9-tech-consults)**
+## Project structure
 
-## Build your app
+- `app/` – top-level Next.js application and page routing
+- `components/` – reusable UI and page sections
+- `public/` – static images and assets
+- `styles/` – global CSS and theme styles
 
-Continue building your app on:
+## Notes
 
-**[https://v0.dev/chat/projects/TXo229Ihykq](https://v0.dev/chat/projects/TXo229Ihykq)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Keep live content current by updating the components in `app/` and `components/`, and then deploy the latest version from this repository.

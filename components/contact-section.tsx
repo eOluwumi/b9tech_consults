@@ -22,14 +22,13 @@ export function ContactSection() {
             <Sparkles className="h-4 w-4 text-blue-400" />
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white font-heading">
-            Start Your{" "}
+            Let's{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              AI Journey
+              Work Together
             </span>
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Ready to transform your organization with ethical AI? Let's discuss how we can help bring your vision to
-            life with cutting-edge technology and human-centered design.
+            Ready to improve your data workflows, dashboards, automation, or AI prototype? Let's discuss how we can help with practical solutions tailored to your data challenges.
           </p>
         </div>
 
@@ -104,8 +103,8 @@ export function ContactSection() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-white mb-1">Enoch Oluwumi</h3>
-                    <p className="text-blue-400 font-medium mb-2">Founder & Chief Executive Officer</p>
-                    <p className="text-slate-300 text-sm">Building ethical AI for Africa and the world</p>
+                    <p className="text-blue-400 font-medium mb-2">Founder & Data Scientist</p>
+                    <p className="text-slate-300 text-sm">Building practical data, automation, and AI systems for African contexts</p>
                   </div>
                 </div>
                 <div className="px-6 pb-6">
@@ -129,23 +128,23 @@ export function ContactSection() {
             {/* Why Choose B9Tech */}
             <Card className="glass border-white/20 shadow-xl">
               <CardContent className="p-8">
-                <h4 className="font-bold text-blue-300 mb-4 text-lg">Why Choose B9Tech?</h4>
+                <h4 className="font-bold text-blue-300 mb-4 text-lg">Why Work With B9Tech?</h4>
                 <ul className="space-y-3 text-sm text-slate-300">
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse"></div>
-                    Nigerian expertise with global AI standards
+                    Data science expertise grounded in real technical work
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse"></div>
-                    Ethical AI development at our core
+                    Practical, production-ready solutions for data challenges
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-pulse"></div>
-                    Proven track record with B3 platform
+                    Active development of the B3 prototype and research directions
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-orange-400 rounded-full animate-pulse"></div>
-                    Human-centered AI solutions
+                    Nigeria-based, African tech context expertise
                   </li>
                 </ul>
               </CardContent>

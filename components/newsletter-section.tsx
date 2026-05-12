@@ -42,9 +42,9 @@ export function NewsletterSection() {
   }
 
   const digestFeatures = [
-    { icon: TrendingUp, label: "Latest AI News", description: "Breaking developments in artificial intelligence" },
-    { icon: Zap, label: "Daily Updates", description: "Delivered every morning at 7 AM UTC" },
-    { icon: Sparkles, label: "Curated Insights", description: "Hand-picked stories from trusted sources" },
+    { icon: TrendingUp, label: "AI & Data Updates", description: "Relevant developments in artificial intelligence and data systems" },
+    { icon: Zap, label: "Systems Focus", description: "Practical insights on automation and analytics" },
+    { icon: Sparkles, label: "Curated Insights", description: "Hand-picked stories aligned with data builder interests" },
   ]
 
   return (
@@ -61,10 +61,10 @@ export function NewsletterSection() {
             <span className="text-blue-300 font-medium">B9TECH Daily Digest</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">
-            Your Daily <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">AI Intelligence</span>
+            Curated <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">AI & Data Systems Digest</span>
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Stay informed with the B9TECH Daily Digest. Curated AI news, industry breakthroughs, and emerging trends delivered to your inbox. Perfect for innovators, developers, and tech enthusiasts.
+            Stay informed with B9TECH's digest. Relevant updates in AI, data systems, and automation delivered to your inbox. For builders, data professionals, and tech teams.
           </p>
         </div>
 
@@ -89,8 +89,8 @@ export function NewsletterSection() {
 
         <Card className="glass border border-white/20 max-w-2xl mx-auto shadow-2xl">
           <CardHeader className="text-center pb-4">
-            <CardTitle className="text-white text-2xl">Subscribe to B9TECH Daily Digest</CardTitle>
-            <p className="text-slate-300 text-sm mt-2">2026 Edition - Powered by AI Intelligence</p>
+            <CardTitle className="text-white text-2xl">Subscribe to B9TECH Digest</CardTitle>
+            <p className="text-slate-300 text-sm mt-2">AI & Data Systems insights delivered regularly</p>
           </CardHeader>
           <CardContent>
             {!isSubscribed ? (
@@ -116,7 +116,7 @@ export function NewsletterSection() {
                   ) : (
                     <>
                       <Send className="mr-2 h-4 w-4" />
-                      Get Daily AI News
+                      Subscribe to Digest
                     </>
                   )}
                 </Button>
@@ -125,8 +125,8 @@ export function NewsletterSection() {
               <div className="text-center space-y-4 py-4">
                 <CheckCircle className="h-16 w-16 text-green-400 mx-auto animate-bounce" />
                 <div>
-                  <p className="text-white font-semibold text-lg">Welcome to B9TECH Daily Digest!</p>
-                  <p className="text-slate-300 text-sm mt-1">Check your inbox for AI news starting tomorrow.</p>
+                  <p className="text-white font-semibold text-lg">Welcome to the B9TECH Digest!</p>
+                  <p className="text-slate-300 text-sm mt-1">Check your inbox for our next update.</p>
                 </div>
               </div>
             )}
@@ -135,7 +135,7 @@ export function NewsletterSection() {
 
         <div className="mt-8 text-center space-y-2">
           <p className="text-slate-400 text-sm">We respect your privacy. Unsubscribe anytime with one click.</p>
-          <p className="text-slate-500 text-xs">© 2026 B9TECH CONSULTS. All rights reserved.</p>
+          <p className="text-slate-500 text-xs">© 2026 B9TECH. All rights reserved.</p>
         </div>
       </div>
     </section>

@@ -134,7 +134,7 @@ export function ContactFormHandler() {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
-          placeholder="AI Consulting Inquiry"
+          placeholder="Dashboard project, data pipeline, AI prototype, etc."
           required
           className="bg-white/10 border-white/20 text-white placeholder:text-slate-400 focus:border-emerald-400"
         />
@@ -149,7 +149,7 @@ export function ContactFormHandler() {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Tell us about your AI project, challenges, or how we can help transform your organization..."
+          placeholder="Tell us about your data challenge. What workflows, dashboards, automation, or prototypes do you need help with?"
           required
           className="min-h-[120px] bg-white/10 border-white/20 text-white placeholder:text-slate-400 focus:border-emerald-400"
         />

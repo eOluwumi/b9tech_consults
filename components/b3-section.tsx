@@ -49,8 +49,7 @@ export function B3Section() {
             </span>
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Our flagship platform revolutionizes traditional commerce through secure, AI-powered bartering technology.
-            Experience the future of cashless trading.
+            An emerging prototype exploring AI-assisted bartering and community value exchange. A research project demonstrating how matching algorithms can facilitate skill and resource sharing.
           </p>
         </div>
 
@@ -66,9 +65,9 @@ export function B3Section() {
                   <div>
                     <CardTitle className="text-2xl text-white">BringBackBarter</CardTitle>
                     <div className="flex items-center gap-2 mt-2">
-                      <Badge className="bg-blue-500 hover:bg-blue-600 text-white animate-pulse-neon">Live Platform</Badge>
+                      <Badge className="bg-blue-500/20 text-blue-300 border border-blue-400/30 animate-pulse-neon">Prototype</Badge>
                       <Badge variant="outline" className="border-white/30 text-white">
-                        AI-Powered
+                        Research Project
                       </Badge>
                     </div>
                   </div>
@@ -77,32 +76,28 @@ export function B3Section() {
             </CardHeader>
 
             <CardContent className="p-8 space-y-8">
-              {/* Stats */}
+              {/* Focus Areas */}
               <div className="grid grid-cols-3 gap-6">
                 <div className="text-center p-6 glass rounded-xl">
                   <div className="flex items-center justify-center mb-3">
                     <Users className="h-8 w-8 text-blue-400 animate-float" />
                   </div>
-                  <div className="text-3xl font-bold text-white">
-                    <AnimatedCounter end={200} />+
-                  </div>
-                  <div className="text-sm text-slate-400">Active Traders</div>
+                  <div className="text-sm font-bold text-white mb-1">Matching</div>
+                  <div className="text-xs text-slate-400">Skill & value pairing</div>
                 </div>
                 <div className="text-center p-6 glass rounded-xl">
                   <div className="flex items-center justify-center mb-3">
                     <Repeat className="h-8 w-8 text-purple-400 animate-float" style={{ animationDelay: '0.2s' }} />
                   </div>
-                  <div className="text-3xl font-bold text-white">
-                    <AnimatedCounter end={150} />+
-                  </div>
-                  <div className="text-sm text-slate-400">Successful Trades</div>
+                  <div className="text-sm font-bold text-white mb-1">Algorithm</div>
+                  <div className="text-xs text-slate-400">Community discovery</div>
                 </div>
                 <div className="text-center p-6 glass rounded-xl">
                   <div className="flex items-center justify-center mb-3">
                     <TrendingUp className="h-8 w-8 text-pink-400 animate-float" style={{ animationDelay: '0.4s' }} />
                   </div>
-                  <div className="text-3xl font-bold text-white">₦0</div>
-                  <div className="text-sm text-slate-400">Cash Required</div>
+                  <div className="text-sm font-bold text-white mb-1">Concept</div>
+                  <div className="text-xs text-slate-400">Research direction</div>
                 </div>
               </div>
 
@@ -114,12 +109,12 @@ export function B3Section() {
                 >
                   <a href="https://b9tech.africa" target="_blank" rel="noopener noreferrer">
                     <Sparkles className="mr-2 h-5 w-5" />
-                    Experience B3 Platform
+                    Explore B3 Research
                     <ExternalLink className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
                 <p className="text-center text-slate-400 text-sm">
-                  Join the revolution • Trade without cash • Build community
+                  Prototype • Community focused • Matching algorithms
                 </p>
               </div>
             </CardContent>
@@ -130,21 +125,21 @@ export function B3Section() {
             {[
               {
                 icon: Shield,
-                title: "AI-Powered Trust",
-                description: "Advanced algorithms ensure secure, verified exchanges between community members",
+                title: "Trust & Verification",
+                description: "Exploring how algorithms can facilitate safe community exchanges and reputation systems",
                 gradient: "from-emerald-500 to-teal-500",
               },
               {
                 icon: Globe,
-                title: "Community Impact",
-                description: "Empowering local economies through direct value exchange and skill sharing",
+                title: "Community Matching",
+                description: "Testing concepts for skill and resource discovery in peer-to-peer networks",
                 gradient: "from-blue-500 to-purple-500",
               },
               {
                 icon: Zap,
-                title: "Innovation Showcase",
+                title: "Technology Research",
                 description:
-                  "Demonstrating how ethical technology can preserve traditions while adding modern security",
+                  "A working prototype exploring modern approaches to traditional bartering principles",
                 gradient: "from-amber-500 to-orange-500",
               },
             ].map((feature, index) => (

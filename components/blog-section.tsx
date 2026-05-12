@@ -81,12 +81,6 @@ const blogPosts = [
   }
 ]
 
-const formatDate = (dateString: string) => {
-  const date = new Date(dateString)
-  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-  return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`
-}
-
 export function BlogSection() {
   const featuredPosts = blogPosts.filter(post => post.featured)
   const recentPosts = blogPosts.filter(post => !post.featured).slice(0, 3)
@@ -132,7 +126,7 @@ export function BlogSection() {
                     <div className="flex items-center gap-4 text-sm text-slate-300">
                       <div className="flex items-center gap-1">
                         <Calendar className="h-4 w-4" />
-                        {formatDate(post.date)}
+                        {new Date(post.date).toLocaleDateString()}
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="h-4 w-4" />
@@ -194,7 +188,7 @@ export function BlogSection() {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-slate-500 text-xs">
-                      {formatDate(post.date)}
+                      {new Date(post.date).toLocaleDateString()}
                     </span>
                     <Button variant="ghost" size="sm" className="text-blue-400 hover:text-blue-300 p-0">
                       Read <ArrowRight className="h-3 w-3 ml-1" />

@@ -6,29 +6,6 @@ import { ArrowRight, Sparkles, Brain, Zap, Shield, Globe } from "lucide-react"
 import { useEffect, useState } from "react"
 import Image from "next/image"
 
-const particlePositions = [
-  { left: "5%", top: "12%", delay: "0s" },
-  { left: "18%", top: "30%", delay: "0.2s" },
-  { left: "30%", top: "18%", delay: "0.4s" },
-  { left: "42%", top: "50%", delay: "0.6s" },
-  { left: "55%", top: "10%", delay: "0.8s" },
-  { left: "68%", top: "25%", delay: "1s" },
-  { left: "82%", top: "18%", delay: "1.2s" },
-  { left: "10%", top: "80%", delay: "0.4s" },
-  { left: "25%", top: "65%", delay: "0.6s" },
-  { left: "40%", top: "78%", delay: "0.8s" },
-  { left: "55%", top: "72%", delay: "1s" },
-  { left: "70%", top: "82%", delay: "1.2s" },
-  { left: "88%", top: "68%", delay: "1.4s" },
-  { left: "15%", top: "48%", delay: "0.3s" },
-  { left: "28%", top: "12%", delay: "0.5s" },
-  { left: "63%", top: "40%", delay: "0.7s" },
-  { left: "77%", top: "55%", delay: "0.9s" },
-  { left: "50%", top: "88%", delay: "1.1s" },
-  { left: "90%", top: "42%", delay: "1.3s" },
-  { left: "35%", top: "25%", delay: "1.5s" },
-]
-
 const FloatingIcon = ({ icon: Icon, delay = 0, className = "" }: { icon: any; delay?: number; className?: string }) => {
   const [isVisible, setIsVisible] = useState(false)
 
@@ -59,7 +36,7 @@ const scrollToSection = (sectionId: string) => {
 
 export function HeroSection() {
   const [currentWord, setCurrentWord] = useState(0)
-  const words = ["Ethical", "Intelligent", "Secure", "Human-Centered"]
+  const words = ["Data-Driven", "Practical", "Transparent", "Human-Centered"]
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -76,14 +53,14 @@ export function HeroSection() {
 
         {/* Particle Effects */}
         <div className="absolute inset-0">
-          {particlePositions.map((particle, i) => (
+          {[...Array(20)].map((_, i) => (
             <div
               key={i}
               className="absolute w-1 h-1 bg-white rounded-full opacity-30 animate-pulse-neon"
               style={{
-                left: particle.left,
-                top: particle.top,
-                animationDelay: particle.delay,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`,
               }}
             />
           ))}
@@ -110,7 +87,7 @@ export function HeroSection() {
                   B9TECH CONSULTS
                 </span>
               </h1>
-              <p className="text-blue-300 font-semibold text-lg">Ethical AI Solutions</p>
+              <p className="text-blue-300 font-semibold text-lg">Data Science & Analytics Studio</p>
             </div>
           </div>
         </div>
@@ -138,8 +115,7 @@ export function HeroSection() {
               AI Solutions
             </h2>
             <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              B9TECH CONSULTS pioneers <span className="text-blue-400 font-semibold">Benign Technology</span> - AI
-              systems that protect, empower, and serve humanity in our rapidly evolving digital world.
+              B9TECH is an emerging <span className="text-blue-400 font-semibold">data, AI, and cybersecurity systems studio</span> focused on practical automation, analytics workflows, and intelligent systems for African contexts.
             </p>
           </div>
         </div>
@@ -170,29 +146,29 @@ export function HeroSection() {
           {[
             {
               icon: Brain,
-              title: "AI Ethics",
-              desc: "Responsible AI development",
+              title: "Data Analytics",
+              desc: "BI, dashboards & reporting",
               color: "from-blue-500 to-purple-500",
               section: "services",
             },
             {
               icon: Shield,
-              title: "Secure Systems",
-              desc: "Privacy-first architecture",
+              title: "Data Systems",
+              desc: "Workflow automation & design",
               color: "from-purple-500 to-pink-500",
               section: "services",
             },
             {
               icon: Zap,
-              title: "Innovation",
-              desc: "Cutting-edge solutions",
+              title: "AI Prototypes",
+              desc: "Intelligent product development",
               color: "from-green-500 to-blue-500",
               section: "b3",
             },
             {
               icon: Globe,
-              title: "Global Impact",
-              desc: "Local expertise, worldwide reach",
+              title: "Cybersecurity",
+              desc: "Analytics & research support",
               color: "from-pink-500 to-orange-500",
               section: "about",
             },

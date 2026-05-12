@@ -1,8 +1,7 @@
 {
-  "name": "b9tech-conglomerate",
+  "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-  "description": "B9TECH CONSULTS website for ethical AI solutions and the live B3 BringBackBarter platform.",
   "scripts": {
     "build": "next build",
     "dev": "next dev",

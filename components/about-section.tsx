@@ -33,7 +33,7 @@ export function AboutSection() {
             <div className="relative w-full h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-500 to-purple-500 p-1 animate-glow">
               <div className="relative w-full h-full rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/exquisite_dp.jpg"
+                  src="/images/enoch-professional.jpg"
                   alt="Enoch Oluwumi - Co-founder & CEO"
                   fill
                   className="object-cover object-center"

@@ -6,29 +6,6 @@ import { ArrowRight, Sparkles, Brain, Zap, Shield, Globe } from "lucide-react"
 import { useEffect, useState } from "react"
 import Image from "next/image"
 
-const particlePositions = [
-  { left: "5%", top: "12%", delay: "0s" },
-  { left: "18%", top: "30%", delay: "0.2s" },
-  { left: "30%", top: "18%", delay: "0.4s" },
-  { left: "42%", top: "50%", delay: "0.6s" },
-  { left: "55%", top: "10%", delay: "0.8s" },
-  { left: "68%", top: "25%", delay: "1s" },
-  { left: "82%", top: "18%", delay: "1.2s" },
-  { left: "10%", top: "80%", delay: "0.4s" },
-  { left: "25%", top: "65%", delay: "0.6s" },
-  { left: "40%", top: "78%", delay: "0.8s" },
-  { left: "55%", top: "72%", delay: "1s" },
-  { left: "70%", top: "82%", delay: "1.2s" },
-  { left: "88%", top: "68%", delay: "1.4s" },
-  { left: "15%", top: "48%", delay: "0.3s" },
-  { left: "28%", top: "12%", delay: "0.5s" },
-  { left: "63%", top: "40%", delay: "0.7s" },
-  { left: "77%", top: "55%", delay: "0.9s" },
-  { left: "50%", top: "88%", delay: "1.1s" },
-  { left: "90%", top: "42%", delay: "1.3s" },
-  { left: "35%", top: "25%", delay: "1.5s" },
-]
-
 const FloatingIcon = ({ icon: Icon, delay = 0, className = "" }: { icon: any; delay?: number; className?: string }) => {
   const [isVisible, setIsVisible] = useState(false)
 
@@ -76,14 +53,14 @@ export function HeroSection() {
 
         {/* Particle Effects */}
         <div className="absolute inset-0">
-          {particlePositions.map((particle, i) => (
+          {[...Array(20)].map((_, i) => (
             <div
               key={i}
               className="absolute w-1 h-1 bg-white rounded-full opacity-30 animate-pulse-neon"
               style={{
-                left: particle.left,
-                top: particle.top,
-                animationDelay: particle.delay,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`,
               }}
             />
           ))}

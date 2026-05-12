@@ -9,104 +9,104 @@ import { useState } from "react"
 const projects = [
   {
     id: 1,
-    title: "SecureBank AI Trust System",
-    description: "Revolutionary AI-powered banking security system that uses ethical AI to detect fraud while maintaining customer privacy. Implemented advanced machine learning algorithms with Nigerian banking compliance.",
+    title: "Analytics Dashboard Platform",
+    description: "Custom BI dashboard for fintech operations. Consolidated transaction data, fraud detection metrics, and compliance reporting with real-time updates.",
     image: "/images/project-1.jpg",
-    technologies: ["Python", "TensorFlow", "React", "Node.js", "PostgreSQL"],
-    category: "FinTech",
-    industry: "Banking",
-    status: "Completed",
+    technologies: ["Power BI", "SQL", "Python", "Azure"],
+    category: "Finance",
+    industry: "FinTech",
+    status: "Live",
     link: "#",
     github: "#",
     metrics: {
-      users: "500K+",
-      accuracy: "99.7%",
-      savings: "$2.3M"
+      focus: "Real-time reporting",
+      coverage: "Operational metrics",
+      impact: "Operational transparency"
     }
   },
   {
     id: 2,
-    title: "HealthAI Diagnostic Assistant",
-    description: "AI-powered medical diagnostic assistant that helps healthcare professionals in Nigeria make informed decisions while ensuring patient data privacy and ethical AI practices.",
+    title: "Healthcare Data Pipeline",
+    description: "ETL system to automate patient data collection and reporting for clinical analytics. Designed for HIPAA compliance and data security.",
     image: "/images/project-2.jpg",
-    technologies: ["Python", "PyTorch", "React", "FastAPI", "MongoDB"],
+    technologies: ["Python", "SQL", "Apache Airflow", "PostgreSQL"],
     category: "Healthcare",
     industry: "Medical",
-    status: "Completed",
+    status: "Live",
     link: "#",
     github: "#",
     metrics: {
-      accuracy: "94.2%",
-      patients: "10K+",
-      timeSaved: "60%"
+      focus: "Data automation",
+      coverage: "Patient records",
+      impact: "Reduced manual processing"
     }
   },
   {
     id: 3,
-    title: "EduAI Learning Platform",
-    description: "Personalized learning platform using AI to adapt educational content for Nigerian students, incorporating local context and cultural relevance while maintaining academic standards.",
+    title: "Educational Analytics System",
+    description: "Student performance analytics dashboard. Tracks learning outcomes, identifies at-risk students, and supports data-driven curriculum decisions.",
     image: "/images/project-3.jpg",
-    technologies: ["Next.js", "Python", "OpenAI", "Supabase", "Tailwind"],
+    technologies: ["Power BI", "SQL", "Python", "Snowflake"],
     category: "Education",
     industry: "EdTech",
     status: "In Progress",
     link: "#",
     github: "#",
     metrics: {
-      students: "25K+",
-      engagement: "+300%",
-      completion: "87%"
+      focus: "Learning insights",
+      coverage: "Student data",
+      impact: "Evidence-based teaching"
     }
   },
   {
     id: 4,
     title: "B3 Bartering Network",
-    description: "Decentralized bartering platform connecting African businesses through our proprietary B3 technology, enabling value exchange without traditional currency barriers.",
+    description: "Prototype platform exploring value exchange systems. Designed to test barter matching algorithms and community trust mechanisms.",
     image: "/images/project-4.jpg",
-    technologies: ["Solidity", "React", "Node.js", "IPFS", "Web3"],
-    category: "Blockchain",
-    industry: "Commerce",
-    status: "Completed",
+    technologies: ["Next.js", "Python", "Node.js", "PostgreSQL"],
+    category: "Commerce",
+    industry: "Marketplace",
+    status: "Prototype",
     link: "#",
     github: "#",
     metrics: {
-      transactions: "15K+",
-      value: "$1.2M",
-      users: "8K+"
+      focus: "Community concept",
+      coverage: "Matching algorithms",
+      impact: "Research direction"
     }
   },
   {
     id: 5,
-    title: "AgriTech Yield Predictor",
-    description: "AI system that predicts crop yields for Nigerian farmers using satellite imagery, weather data, and local farming practices to optimize agricultural productivity.",
+    title: "Agricultural Data Dashboard",
+    description: "Crop management dashboard integrating weather, soil, and yield data. Helps farmers track conditions and plan interventions.",
     image: "/images/project-5.jpg",
-    technologies: ["Python", "TensorFlow", "React", "AWS", "PostgreSQL"],
+    technologies: ["Python", "Power BI", "SQL", "Weather APIs"],
     category: "Agriculture",
     industry: "AgriTech",
-    status: "Completed",
+    status: "Live",
     link: "#",
     github: "#",
     metrics: {
-      accuracy: "91.5%",
-      farmers: "5K+",
-      yield: "+25%"
+      focus: "Farm analytics",
+      coverage: "Field data",
+      impact: "Data-informed decisions"
     }
   },
   {
     id: 6,
-    title: "SmartCity Traffic AI",
-    description: "Intelligent traffic management system for Lagos using computer vision and predictive AI to optimize traffic flow and reduce congestion in major Nigerian cities.",
+    title: "Urban Mobility Analytics",
+    description: "Traffic and transportation data analysis system. Explores congestion patterns and supports city planning research.",
     image: "/images/project-6.jpg",
-    technologies: ["Python", "OpenCV", "React", "Node.js", "Redis"],
+    technologies: ["Python", "SQL", "Tableau", "GIS"],
     category: "Smart City",
     industry: "Transportation",
-    status: "In Progress",
+    status: "Research",
     link: "#",
     github: "#",
     metrics: {
-      reduction: "35%",
-      coverage: "500km",
-      efficiency: "+40%"
+      focus: "Mobility research",
+      coverage: "Traffic patterns",
+      impact: "Planning insights"
     }
   }
 ]
@@ -135,10 +135,10 @@ export function PortfolioSection() {
             <span className="text-purple-300 font-medium">Our Work</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">
-            Innovative <span className="text-purple-400">Solutions</span> in Action
+            Data <span className="text-purple-400">Projects</span> & Work
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Explore our portfolio of transformative AI projects that are shaping the future of technology across Africa
+            A portfolio of analytics, automation, and data systems work. Each project labeled by status: Live, Prototype, In Progress, or Research.
           </p>
         </div>
 
@@ -174,9 +174,13 @@ export function PortfolioSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute top-4 left-4">
                   <Badge className={`${
-                    project.status === 'Completed'
+                    project.status === 'Live'
                       ? 'bg-green-500/20 text-green-300 border-green-400/30'
-                      : 'bg-yellow-500/20 text-yellow-300 border-yellow-400/30'
+                      : project.status === 'Prototype'
+                      ? 'bg-blue-500/20 text-blue-300 border-blue-400/30'
+                      : project.status === 'In Progress'
+                      ? 'bg-yellow-500/20 text-yellow-300 border-yellow-400/30'
+                      : 'bg-purple-500/20 text-purple-300 border-purple-400/30'
                   }`}>
                     {project.status}
                   </Badge>
@@ -238,12 +242,12 @@ export function PortfolioSection() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <div className="glass p-8 rounded-2xl max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Start Your Project?</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Have a Data Challenge?</h3>
             <p className="text-slate-300 mb-6">
-              Let's discuss how we can leverage ethical AI to transform your business and create innovative solutions.
+              Dashboard, automation, data engineering, or AI prototype—let's talk about how B9Tech can help with practical solutions.
             </p>
             <Button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-3">
-              Start Your Journey
+              Get in Touch
             </Button>
           </div>
         </div>

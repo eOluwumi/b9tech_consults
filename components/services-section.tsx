@@ -8,52 +8,52 @@ import { useState } from "react"
 const services = [
   {
     icon: Brain,
-    title: "AI Ethics & Strategy",
+    title: "Data Analytics & Reporting",
     description:
-      "Comprehensive AI governance, ethical framework development, and responsible AI implementation strategies.",
-    features: ["AI Audit & Assessment", "Ethics Framework Design", "Bias Detection & Mitigation", "AI Governance"],
+      "Custom dashboards, BI tools, and reporting systems. Turn raw data into actionable business intelligence.",
+    features: ["Power BI / Tableau", "Data Visualization", "KPI Dashboards", "Custom Reports"],
     gradient: "from-purple-500 to-pink-500",
     hoverGradient: "from-purple-600 to-pink-600",
   },
   {
-    icon: Lock,
-    title: "Secure AI Systems",
-    description: "Privacy-preserving AI architectures with advanced security measures and compliance frameworks.",
-    features: ["Federated Learning", "Differential Privacy", "Secure Multi-party Computation", "AI Security Audits"],
-    gradient: "from-red-500 to-orange-500",
-    hoverGradient: "from-red-600 to-orange-600",
-  },
-  {
-    icon: Globe,
-    title: "AI-Powered Platforms",
-    description: "End-to-end AI platform development with focus on community empowerment and social impact.",
-    features: ["Machine Learning Platforms", "AI-Driven Analytics", "Intelligent Automation", "Community AI Tools"],
-    gradient: "from-emerald-500 to-teal-500",
-    hoverGradient: "from-emerald-600 to-teal-600",
-  },
-  {
     icon: Code,
-    title: "Custom AI Development",
-    description: "Bespoke AI solutions tailored to your specific needs with ethical design principles.",
-    features: ["Natural Language Processing", "Computer Vision", "Predictive Analytics", "AI Integration"],
+    title: "Workflow Automation",
+    description: "ETL pipelines, data engineering, and intelligent process automation to reduce manual work.",
+    features: ["Python Scripts & ETL", "Data Pipeline Design", "Scheduling & Monitoring", "Process Optimization"],
     gradient: "from-blue-500 to-cyan-500",
     hoverGradient: "from-blue-600 to-cyan-600",
   },
   {
-    icon: UserCheck,
-    title: "AI Identity & Trust",
-    description: "Advanced identity verification and trust systems powered by ethical AI technologies.",
-    features: ["Biometric Authentication", "Behavioral Analysis", "Trust Scoring", "Identity Protection"],
+    icon: Lock,
+    title: "Data Systems Design",
+    description: "Database architecture, data modeling, and secure data infrastructure for scalable operations.",
+    features: ["Database Design", "SQL Optimization", "Data Governance", "Security & Compliance"],
+    gradient: "from-red-500 to-orange-500",
+    hoverGradient: "from-red-600 to-orange-600",
+  },
+  {
+    icon: Sparkles,
+    title: "AI Product Prototypes",
+    description: "Proof-of-concept intelligent systems: predictive models, recommendation engines, and AI-assisted tools.",
+    features: ["Predictive Analytics", "ML Model Development", "AI Integration", "Prototype Testing"],
     gradient: "from-amber-500 to-yellow-500",
     hoverGradient: "from-amber-600 to-yellow-600",
   },
   {
     icon: Shield,
-    title: "AI Content Moderation",
-    description: "Intelligent content moderation systems that balance safety with freedom of expression.",
-    features: ["Real-time Moderation", "Context-Aware AI", "Multi-language Support", "Appeal Systems"],
+    title: "Cybersecurity Analytics",
+    description: "Data-driven security: threat analysis, security dashboards, and incident response data systems.",
+    features: ["Security Dashboards", "Threat Analytics", "Log Analysis", "Incident Tracking"],
     gradient: "from-indigo-500 to-purple-500",
     hoverGradient: "from-indigo-600 to-purple-600",
+  },
+  {
+    icon: Globe,
+    title: "IT Systems & Support",
+    description: "Technical consulting and systems setup for data infrastructure and analytics platforms.",
+    features: ["Systems Consulting", "Infrastructure Setup", "Tool Integration", "Technical Training"],
+    gradient: "from-emerald-500 to-teal-500",
+    hoverGradient: "from-emerald-600 to-teal-600",
   },
 ]
 
@@ -74,11 +74,10 @@ export function ServicesSection() {
             <span className="text-blue-300 font-semibold">AI-Powered Services</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent font-heading">
-            Ethical AI Solutions
+            Data & Systems Services
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            We provide cutting-edge AI consulting and development services designed to help organizations harness the
-            power of artificial intelligence while maintaining ethical standards and human-centered values.
+            We specialize in practical data solutions: analytics platforms, automation workflows, and intelligent systems. Real work for real business problems.
           </p>
         </div>
 
@@ -125,10 +124,9 @@ export function ServicesSection() {
                   <Zap className="h-8 w-8 text-white" />
                 </div>
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-heading">Ready to Transform with AI?</h3>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-heading">Let's Work Together</h3>
               <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto">
-                Let's discuss how B9Tech can help your organization leverage ethical AI to solve complex challenges and
-                create meaningful impact.
+                Whether you need a dashboard, workflow automation, data infrastructure, or an AI prototype—B9Tech builds practical solutions for data challenges.
               </p>
               <Button
                 size="lg"
@@ -141,7 +139,7 @@ export function ServicesSection() {
                 className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-glow"
               >
                 <Sparkles className="mr-3 h-5 w-5" />
-                Start Your AI Journey
+                Get in Touch
                 <ArrowRight className="ml-3 h-5 w-5" />
               </Button>
             </CardContent>

@@ -36,7 +36,7 @@ const scrollToSection = (sectionId: string) => {
 
 export function HeroSection() {
   const [currentWord, setCurrentWord] = useState(0)
-  const words = ["Ethical", "Intelligent", "Secure", "Human-Centered"]
+  const words = ["Data-Driven", "Practical", "Transparent", "Human-Centered"]
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -87,7 +87,7 @@ export function HeroSection() {
                   B9TECH CONSULTS
                 </span>
               </h1>
-              <p className="text-blue-300 font-semibold text-lg">Ethical AI Solutions</p>
+              <p className="text-blue-300 font-semibold text-lg">Data Science & Analytics Studio</p>
             </div>
           </div>
         </div>
@@ -115,8 +115,7 @@ export function HeroSection() {
               AI Solutions
             </h2>
             <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              B9TECH CONSULTS pioneers <span className="text-blue-400 font-semibold">Benign Technology</span> - AI
-              systems that protect, empower, and serve humanity in our rapidly evolving digital world.
+              B9TECH is an emerging <span className="text-blue-400 font-semibold">data, AI, and cybersecurity systems studio</span> focused on practical automation, analytics workflows, and intelligent systems for African contexts.
             </p>
           </div>
         </div>
@@ -147,29 +146,29 @@ export function HeroSection() {
           {[
             {
               icon: Brain,
-              title: "AI Ethics",
-              desc: "Responsible AI development",
+              title: "Data Analytics",
+              desc: "BI, dashboards & reporting",
               color: "from-blue-500 to-purple-500",
               section: "services",
             },
             {
               icon: Shield,
-              title: "Secure Systems",
-              desc: "Privacy-first architecture",
+              title: "Data Systems",
+              desc: "Workflow automation & design",
               color: "from-purple-500 to-pink-500",
               section: "services",
             },
             {
               icon: Zap,
-              title: "Innovation",
-              desc: "Cutting-edge solutions",
+              title: "AI Prototypes",
+              desc: "Intelligent product development",
               color: "from-green-500 to-blue-500",
               section: "b3",
             },
             {
               icon: Globe,
-              title: "Global Impact",
-              desc: "Local expertise, worldwide reach",
+              title: "Cybersecurity",
+              desc: "Analytics & research support",
               color: "from-pink-500 to-orange-500",
               section: "about",
             },

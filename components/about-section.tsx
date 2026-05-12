@@ -20,10 +20,10 @@ export function AboutSection() {
             <span className="text-blue-300 font-medium">About Our Leadership</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">
-            Pioneering <span className="text-blue-400">Ethical AI</span>
+            Meet the <span className="text-blue-400">Founder</span>
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Meet the visionary leader driving B9TECH CONSULTS' mission to create AI that serves humanity
+            A Data Scientist building practical data systems and analytics solutions for African tech
           </p>
         </div>
 
@@ -58,41 +58,35 @@ export function AboutSection() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-2 font-heading">Enoch Oluwumi</h3>
               <p className="text-xl text-blue-400 font-semibold mb-6">
-                Co-founder & Chief Executive Officer
+                Founder & Data Systems Professional
               </p>
               <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                Building ethical AI for Africa and the world
+                Data Scientist | Data Systems & Analytics Professional | Python, SQL, Power BI & Automation
               </p>
             </div>
 
             <div className="space-y-6">
               <p className="text-slate-300 leading-relaxed">
-                Enoch Oluwumi is a visionary leader in ethical AI development, dedicated to creating technology that
-                empowers communities rather than exploiting them. With a deep understanding of both cutting-edge AI
-                capabilities and the social responsibility that comes with them, he leads B9TECH CONSULTS in pioneering
-                Benign Technology.
+                Founded by Enoch Oluwumi, a Data Scientist and data systems professional working across analytics, automation, IT systems, and AI/cybersecurity research. B9TECH operates as a technical studio and portfolio platform for emerging work in practical data solutions.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                Under his leadership, B9TECH CONSULTS has become a trusted partner for organizations seeking to
-                implement AI solutions that prioritize privacy, security, and human dignity. His commitment to ethical
-                innovation has positioned the company at the forefront of responsible AI development in Africa and
-                beyond.
+                Enoch brings expertise in data engineering, business intelligence, workflow automation, and AI applications within African tech contexts. B9TECH works on real-world data challenges—dashboards, ETL pipelines, analytics platforms, and intelligent automation—serving organizations that need credible, practical digital solutions.
               </p>
             </div>
 
-            {/* Stats */}
+            {/* Skills & Focus */}
             <div className="grid grid-cols-3 gap-6 py-8">
               <div className="text-center glass p-6 rounded-xl animate-float">
-                <div className="text-3xl font-bold text-blue-400 mb-2 animate-pulse-neon">5+</div>
-                <div className="text-sm text-slate-400">Years Experience</div>
+                <div className="text-sm font-bold text-blue-400 mb-2">Python</div>
+                <div className="text-xs text-slate-400">Data Engineering</div>
               </div>
               <div className="text-center glass p-6 rounded-xl animate-float" style={{ animationDelay: '0.2s' }}>
-                <div className="text-3xl font-bold text-purple-400 mb-2 animate-pulse-neon">50+</div>
-                <div className="text-sm text-slate-400">Projects Delivered</div>
+                <div className="text-sm font-bold text-purple-400 mb-2">SQL</div>
+                <div className="text-xs text-slate-400">Database Design</div>
               </div>
               <div className="text-center glass p-6 rounded-xl animate-float" style={{ animationDelay: '0.4s' }}>
-                <div className="text-3xl font-bold text-pink-400 mb-2 animate-pulse-neon">100%</div>
-                <div className="text-sm text-slate-400">Ethical Focus</div>
+                <div className="text-sm font-bold text-pink-400 mb-2">Power BI</div>
+                <div className="text-xs text-slate-400">Analytics & BI</div>
               </div>
             </div>
 
@@ -120,20 +114,18 @@ export function AboutSection() {
           </div>
         </div>
 
-        {/* Mission Statement */}
+        {/* Vision Statement */}
         <div className="mt-20">
           <Card className="glass border-white/20">
             <CardContent className="p-8 md:p-12">
               <div className="text-center">
                 <Users className="h-12 w-12 text-blue-400 mx-auto mb-6 animate-float" />
-                <h3 className="text-2xl font-bold text-white mb-4 font-heading">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-white mb-4 font-heading">B9TECH Vision</h3>
                 <p className="text-lg text-slate-300 max-w-4xl mx-auto leading-relaxed">
-                  "At B9TECH CONSULTS, we believe technology should serve humanity, not the other way around. Our
-                  mission is to develop AI solutions that respect privacy, promote transparency, and empower communities
-                  to thrive in the digital age. We're not just building software – we're building a better future."
+                  "B9TECH is an emerging data, AI, and cybersecurity systems studio. We believe data-driven decisions and practical automation empower organizations and communities. We build dashboards, platforms, and intelligent systems that serve real business problems in African tech contexts."
                 </p>
                 <div className="mt-6">
-                  <span className="text-blue-400 font-semibold">— Enoch Oluwumi, CEO</span>
+                  <span className="text-blue-400 font-semibold">— Enoch Oluwumi, Founder</span>
                 </div>
               </div>
             </CardContent>

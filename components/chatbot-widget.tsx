@@ -16,18 +16,18 @@ interface Message {
 const initialMessages: Message[] = [
   {
     id: '1',
-    text: "Hello! I'm B9Bot, your AI assistant. How can I help you learn more about B9TECH's ethical AI solutions today?",
+    text: "Hello! I'm B9Bot, your AI assistant. How can I help you learn more about B9TECH's data science and analytics services?",
     sender: 'bot',
     timestamp: new Date()
   }
 ]
 
 const quickReplies = [
-  "Tell me about your AI services",
-  "What is B3 technology?",
-  "How do you ensure ethical AI?",
+  "Tell me about your services",
+  "What is B3?",
+  "Show me your portfolio",
   "Contact information",
-  "Portfolio examples"
+  "How does B9TECH work?"
 ]
 
 export function ChatbotWidget() {
@@ -76,27 +76,27 @@ export function ChatbotWidget() {
   const getBotResponse = (userInput: string): string => {
     const input = userInput.toLowerCase()
 
-    if (input.includes('ai services') || input.includes('services')) {
-      return "B9TECH specializes in ethical AI solutions including healthcare diagnostics, financial security systems, educational platforms, and smart city technologies. All our AI systems prioritize human values and African context."
+    if (input.includes('ai services') || input.includes('services') || input.includes('data')) {
+      return "B9TECH provides data analytics, workflow automation, data systems design, AI prototypes, cybersecurity analytics, and IT systems support. Our focus is practical, production-ready solutions for real business problems—dashboards, pipelines, and intelligent automation."
     }
 
     if (input.includes('b3') || input.includes('bartering')) {
-      return "B3 (Barter, Build, Benefit) is our proprietary technology that enables decentralized value exchange. It allows African businesses to trade goods and services without traditional currency barriers, fostering economic growth and community building."
+      return "B3 is a prototype exploring AI-assisted bartering and community value exchange. It's a research direction demonstrating how matching algorithms could facilitate skill and resource sharing in communities."
     }
 
-    if (input.includes('ethical') || input.includes('ethics')) {
-      return "Ethical AI is at our core. We ensure all our systems prioritize privacy, fairness, transparency, and human benefit. Our Nigerian-led team brings unique perspectives to global AI ethics standards."
+    if (input.includes('ethical') || input.includes('ethics') || input.includes('philosophy')) {
+      return "We build practical data and AI systems with transparency and human benefit in mind. Our approach is grounded in real technical work—no empty AI ethics rhetoric, just credible, thoughtful product development."
     }
 
     if (input.includes('contact') || input.includes('reach')) {
-      return "You can reach us through our contact form on the website, or email us at hello@b9tech.africa. We're also active on LinkedIn and Twitter. Would you like me to help you navigate to the contact section?"
+      return "You can reach us through our contact form on the website, or email us at hello@b9tech.africa. We're also on LinkedIn. Let me know if you'd like to navigate to the contact section!"
     }
 
     if (input.includes('portfolio') || input.includes('projects') || input.includes('work')) {
-      return "We've worked on exciting projects including AI healthcare systems, secure banking platforms, educational AI, and smart city solutions. Check out our portfolio section to see detailed case studies and metrics."
+      return "Check out our portfolio section for examples of our work including analytics dashboards, data pipelines, educational systems, and research prototypes. Each project is labeled with its status: Portfolio Project, Prototype, In Progress, or Research Direction."
     }
 
-    return "That's an interesting question! I'd be happy to help you learn more about B9TECH. Could you tell me more about what you're interested in? We specialize in ethical AI, B3 bartering technology, and innovative solutions for African businesses."
+    return "I'd be happy to help you learn more about B9TECH. What would you like to know? We specialize in data analytics, automation, systems design, and AI prototypes for African tech contexts."
   }
 
   const handleQuickReply = (reply: string) => {

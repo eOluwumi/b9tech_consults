@@ -6,9 +6,9 @@ import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { B3Section } from "@/components/b3-section"
 import { ServicesSection } from "@/components/services-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
+
 import { PortfolioSection } from "@/components/portfolio-section"
-import { BlogSection } from "@/components/blog-section"
+
 import { ContactSection } from "@/components/contact-section"
 import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
@@ -86,15 +86,11 @@ export default function HomePage() {
           <section id="services">
             <ServicesSection />
           </section>
-          <section id="testimonials">
-            <TestimonialsSection />
-          </section>
+
           <section id="portfolio">
             <PortfolioSection />
           </section>
-          <section id="blog">
-            <BlogSection />
-          </section>
+
           <section id="contact">
             <ContactSection />
           </section>

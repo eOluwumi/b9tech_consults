@@ -15,7 +15,7 @@ const projects = [
     technologies: ["Power BI", "SQL", "Python", "Azure"],
     category: "Finance",
     industry: "FinTech",
-    status: "Live",
+    status: "Portfolio Project",
     link: "#",
     github: "#",
     metrics: {
@@ -32,7 +32,7 @@ const projects = [
     technologies: ["Python", "SQL", "Apache Airflow", "PostgreSQL"],
     category: "Healthcare",
     industry: "Medical",
-    status: "Live",
+    status: "Portfolio Project",
     link: "#",
     github: "#",
     metrics: {
@@ -83,7 +83,7 @@ const projects = [
     technologies: ["Python", "Power BI", "SQL", "Weather APIs"],
     category: "Agriculture",
     industry: "AgriTech",
-    status: "Live",
+    status: "Portfolio Project",
     link: "#",
     github: "#",
     metrics: {
@@ -174,13 +174,13 @@ export function PortfolioSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute top-4 left-4">
                   <Badge className={`${
-                    project.status === 'Live'
-                      ? 'bg-green-500/20 text-green-300 border-green-400/30'
-                      : project.status === 'Prototype'
+                    project.status === 'Portfolio Project'
                       ? 'bg-blue-500/20 text-blue-300 border-blue-400/30'
+                      : project.status === 'Prototype'
+                      ? 'bg-purple-500/20 text-purple-300 border-purple-400/30'
                       : project.status === 'In Progress'
                       ? 'bg-yellow-500/20 text-yellow-300 border-yellow-400/30'
-                      : 'bg-purple-500/20 text-purple-300 border-purple-400/30'
+                      : 'bg-gray-500/20 text-gray-300 border-gray-400/30'
                   }`}>
                     {project.status}
                   </Badge>

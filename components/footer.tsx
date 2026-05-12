@@ -44,12 +44,12 @@ export function Footer() {
                   <Image src="/images/b9-logo-main.png" alt="B9TECH Logo" fill className="object-contain p-1" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">B9TECH CONSULTS</h3>
-                  <p className="text-blue-400 font-medium">Ethical AI Solutions</p>
+                  <h3 className="text-2xl font-bold text-white">B9TECH</h3>
+                  <p className="text-blue-400 font-medium">Data & AI Systems Studio</p>
                 </div>
               </div>
               <p className="text-slate-300 leading-relaxed mb-8 max-w-md">
-                Pioneering ethical AI development and secure systems that empower communities and restore trust in technology.
+                Data science, analytics platforms, workflow automation, and intelligent systems for African tech contexts.
               </p>
 
               <div className="flex items-center gap-4 mb-6">
@@ -99,14 +99,14 @@ export function Footer() {
             <div>
               <h4 className="font-bold text-white mb-6 flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-emerald-400 animate-spin-slow" />
-                AI Services
+                Services
               </h4>
               <ul className="space-y-3 text-slate-400">
-                <li><a href="#services" className="hover:text-emerald-400 transition-colors">AI Ethics & Strategy</a></li>
-                <li><a href="#services" className="hover:text-emerald-400 transition-colors">Secure AI Systems</a></li>
-                <li><a href="#services" className="hover:text-emerald-400 transition-colors">AI-Powered Platforms</a></li>
-                <li><a href="#services" className="hover:text-emerald-400 transition-colors">Custom AI Development</a></li>
-                <li><a href="#newsletter" className="hover:text-blue-400 transition-colors">Daily AI Insights Newsletter</a></li>
+                <li><a href="#services" className="hover:text-emerald-400 transition-colors">Data Analytics & Reporting</a></li>
+                <li><a href="#services" className="hover:text-emerald-400 transition-colors">Workflow Automation</a></li>
+                <li><a href="#services" className="hover:text-emerald-400 transition-colors">Data Systems Design</a></li>
+                <li><a href="#services" className="hover:text-emerald-400 transition-colors">AI Product Prototypes</a></li>
+                <li><a href="#services" className="hover:text-emerald-400 transition-colors">Cybersecurity Analytics</a></li>
               </ul>
             </div>
 
@@ -136,7 +136,7 @@ export function Footer() {
                     </div>
                     <div>
                       <p className="text-white font-medium text-sm">Enoch Oluwumi</p>
-                      <p className="text-blue-400 text-xs">Co-founder & CEO</p>
+                      <p className="text-blue-400 text-xs">Founder & Data Scientist</p>
                     </div>
                   </div>
                   <a href="https://www.linkedin.com/in/enoch-oluwumi-b075a2386/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-blue-400 transition-colors">
@@ -164,11 +164,11 @@ export function Footer() {
 
           <div className="text-center mt-12">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 px-6 py-3 rounded-full border border-blue-400/30 animate-float">
-              <span className="text-blue-300 font-medium">Proudly Nigerian</span>
+              <span className="text-blue-300 font-medium">Nigeria-Based</span>
               <span className="text-slate-400">•</span>
-              <span className="text-slate-400">Building Technology for Good</span>
+              <span className="text-slate-400">Data-Driven Solutions</span>
               <span className="text-slate-400">•</span>
-              <span className="text-slate-400">#BarterNaija #BarterisBackandBetter</span>
+              <span className="text-slate-400">Practical & Professional</span>
             </div>
           </div>
         </div>

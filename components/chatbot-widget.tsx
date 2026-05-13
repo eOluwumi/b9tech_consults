@@ -81,7 +81,7 @@ export function ChatbotWidget() {
     }
 
     if (input.includes('b3') || input.includes('bartering')) {
-      return "B3 (Barter, Build, Benefit) is our proprietary technology that enables decentralized value exchange. It allows African businesses to trade goods and services without traditional currency barriers, fostering economic growth and community building."
+      return "B3 (Barter, Build, Benefit) is our proprietary technology that enables decentralized value exchange. It allows African businesses to trade goods and services without traditional currency barriers, fostering economic growth and community building. Visit our live platform at https://barternaija.com.ng"
     }
 
     if (input.includes('ethical') || input.includes('ethics')) {

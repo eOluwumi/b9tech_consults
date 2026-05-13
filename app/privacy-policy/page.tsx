@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
               <p className="text-lg leading-relaxed">
                 B9TECH Consult ("we," "our," or "us") respects your privacy and is committed to protecting your personal
                 data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when
-                you visit or use the BringBackBarter (B3) platform, including our website [b9techafrica.com] and
+                you visit or use the BringBackBarter (B3) platform, including our website [barternaija.com.ng] and
                 associated services (the "Service"). This policy complies with the Nigeria Data Protection Regulation
                 (NDPR) and other applicable laws.
               </p>

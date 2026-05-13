@@ -89,7 +89,7 @@ export function ChatbotWidget() {
     }
 
     if (input.includes('contact') || input.includes('reach')) {
-      return "You can reach us through our contact form on the website, or email us at hello@b9tech.africa. We're also on LinkedIn. Let me know if you'd like to navigate to the contact section!"
+      return "You can reach us through our contact form on the website, or email us at b9techconsults@gmail.com. For direct contact with the founder, email enocholuwumi77@gmail.com. We're also on LinkedIn. Let me know if you'd like to navigate to the contact section!"
     }
 
     if (input.includes('portfolio') || input.includes('projects') || input.includes('work')) {

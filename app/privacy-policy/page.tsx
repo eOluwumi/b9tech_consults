@@ -140,8 +140,8 @@ export default function PrivacyPolicyPage() {
                 </ul>
                 <p className="text-blue-700 dark:text-blue-300 mt-3">
                   To exercise these rights, contact us via{" "}
-                  <a href="mailto:support@b9techafrica.com" className="underline">
-                    support@b9techafrica.com
+                  <a href="mailto:b9techconsults@gmail.com" className="underline">
+                    b9techconsults@gmail.com
                   </a>
                   .
                 </p>
@@ -190,9 +190,15 @@ export default function PrivacyPolicyPage() {
                     <strong>B9TECH Consult</strong>
                   </p>
                   <p>
-                    Email:{" "}
-                    <a href="mailto:support@b9techafrica.com" className="text-blue-600 hover:text-blue-700">
-                      support@b9techafrica.com
+                    Business Email:{" "}
+                    <a href="mailto:b9techconsults@gmail.com" className="text-blue-600 hover:text-blue-700">
+                      b9techconsults@gmail.com
+                    </a>
+                  </p>
+                  <p>
+                    Founder&apos;s Email:{" "}
+                    <a href="mailto:enocholuwumi77@gmail.com" className="text-blue-600 hover:text-blue-700">
+                      enocholuwumi77@gmail.com
                     </a>
                   </p>
                   <p>

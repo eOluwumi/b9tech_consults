@@ -115,7 +115,7 @@ export function Footer() {
               <div className="space-y-4 text-slate-400">
                 <p className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-emerald-400" />
-                  info@b9techafrica.com
+                  b9techconsults@gmail.com
                 </p>
                 <p className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-emerald-400" />

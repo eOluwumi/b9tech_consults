@@ -3,6 +3,7 @@
 import { AppSidebar } from "@/components/app-sidebar"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { HeroSection } from "@/components/hero-section"
+import { Construction, ExternalLink } from "lucide-react"
 import { AboutSection } from "@/components/about-section"
 import { B3Section } from "@/components/b3-section"
 import { ServicesSection } from "@/components/services-section"
@@ -34,6 +35,27 @@ export default function HomePage() {
       <NavigationHandler />
       <AppSidebar />
       <SidebarInset>
+        {/* Maintenance Banner */}
+        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 text-white py-3 px-4 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.1)_25%,rgba(255,255,255,0.1)_50%,transparent_50%,transparent_75%,rgba(255,255,255,0.1)_75%)] bg-[length:20px_20px] animate-[shimmer_1s_linear_infinite]"></div>
+          <div className="relative flex items-center justify-center gap-3 flex-wrap">
+            <Construction className="h-5 w-5 animate-bounce" />
+            <span className="font-medium text-sm md:text-base">
+              Our website is currently undergoing maintenance.{" "}
+              <a 
+                href="https://b9techafrica.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 underline underline-offset-2 hover:text-amber-100 font-semibold"
+              >
+                b9techafrica.com
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+              {" "}will be live shortly!
+            </span>
+            <Construction className="h-5 w-5 animate-bounce" />
+          </div>
+        </div>
         <header
           className={`sticky top-0 z-50 flex h-16 shrink-0 items-center gap-2 border-b transition-all duration-300 px-4 ${
             isScrolled

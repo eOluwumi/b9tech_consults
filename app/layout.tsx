@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { MaintenanceBanner } from "@/components/maintenance-banner"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <MaintenanceBanner />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange={false}>
           {children}
         </ThemeProvider>

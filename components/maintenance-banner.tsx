@@ -9,7 +9,7 @@ export function MaintenanceBanner() {
   if (!isVisible) return null
 
   return (
-    <div className="w-full bg-gradient-to-r from-yellow-500/10 via-amber-500/10 to-orange-500/10 border-b border-yellow-500/30 sticky top-0 z-50">
+    <div className="w-full bg-gradient-to-r from-yellow-500/10 via-amber-500/10 to-orange-500/10 border-b border-yellow-500/30">
       <div className="max-w-full px-4 py-3 sm:px-6 sm:py-4">
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-start gap-3 flex-1">

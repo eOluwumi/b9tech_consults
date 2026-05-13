@@ -38,7 +38,7 @@ export default function HomePage() {
       <AppSidebar />
       <SidebarInset>
         <header
-          className={`sticky top-[50px] z-40 flex h-16 shrink-0 items-center gap-2 border-b transition-all duration-300 px-4 ${
+          className={`sticky top-0 z-50 flex h-16 shrink-0 items-center gap-2 border-b transition-all duration-300 px-4 ${
             isScrolled
               ? "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-lg"
               : "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"

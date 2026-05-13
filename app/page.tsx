@@ -1,5 +1,6 @@
 "use client"
 
+import { MaintenanceBanner } from "@/components/maintenance-banner"
 import { AppSidebar } from "@/components/app-sidebar"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { HeroSection } from "@/components/hero-section"
@@ -30,8 +31,10 @@ export default function HomePage() {
   }, [])
 
   return (
-    <SidebarProvider>
-      <NavigationHandler />
+    <>
+      <MaintenanceBanner />
+      <SidebarProvider>
+        <NavigationHandler />
       <AppSidebar />
       <SidebarInset>
         <header
@@ -97,10 +100,9 @@ export default function HomePage() {
           <section id="newsletter">
             <NewsletterSection />
           </section>
-          <Footer />
-          <ChatbotWidget />
-        </main>
-      </SidebarInset>
-    </SidebarProvider>
-  )
-}
+        <Footer />
+        <ChatbotWidget />
+      </SidebarProvider>
+    </>
+    )
+  }

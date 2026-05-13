@@ -1,6 +1,5 @@
 "use client"
 
-import { MaintenanceBanner } from "@/components/maintenance-banner"
 import { AppSidebar } from "@/components/app-sidebar"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { HeroSection } from "@/components/hero-section"
@@ -15,6 +14,7 @@ import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 import { ChatbotWidget } from "@/components/chatbot-widget"
 import { NavigationHandler } from "@/components/navigation-handler"
+import { MaintenanceBanner } from "@/components/maintenance-banner"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import Image from "next/image"
 import { useEffect, useState } from "react"
@@ -100,9 +100,12 @@ export default function HomePage() {
           <section id="newsletter">
             <NewsletterSection />
           </section>
-        <Footer />
-        <ChatbotWidget />
-      </SidebarProvider>
+          <Footer />
+          <ChatbotWidget />
+        </main>
+      </SidebarInset>
+      <ChatbotWidget />
+    </SidebarProvider>
     </>
-    )
-  }
+  )
+}

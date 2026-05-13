@@ -1,36 +1,36 @@
-'use client'
+"use client"
 
-import { AlertCircle, X } from 'lucide-react'
-import { useState } from 'react'
+import { AlertCircle, X } from "lucide-react"
+import { useState } from "react"
 
 export function MaintenanceBanner() {
   const [isVisible, setIsVisible] = useState(true)
 
-  if (!isVisible) {
-    return null
-  }
+  if (!isVisible) return null
 
   return (
-    <div className="w-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-b border-amber-400/30 backdrop-blur-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <AlertCircle className="h-5 w-5 text-amber-400 flex-shrink-0 animate-pulse" />
-          <div className="flex-1">
-            <p className="text-sm font-medium text-amber-100">
-              Website Maintenance in Progress
-            </p>
-            <p className="text-xs text-amber-200 hidden sm:block">
-              We&apos;re currently upgrading our platform. Services may be intermittently unavailable.
-            </p>
+    <div className="w-full bg-gradient-to-r from-yellow-500/10 via-amber-500/10 to-orange-500/10 border-b border-yellow-500/30 sticky top-0 z-50">
+      <div className="max-w-full px-4 py-3 sm:px-6 sm:py-4">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-start gap-3 flex-1">
+            <AlertCircle className="h-5 w-5 text-yellow-500 flex-shrink-0 mt-0.5" />
+            <div className="flex-1">
+              <p className="text-sm font-semibold text-yellow-900 dark:text-yellow-200">
+                Website Maintenance
+              </p>
+              <p className="text-sm text-yellow-800 dark:text-yellow-300 mt-1">
+                We&apos;re currently updating our site. <span className="font-medium">https://b9techafrica.com</span> will be live shortly. Thank you for your patience!
+              </p>
+            </div>
           </div>
+          <button
+            onClick={() => setIsVisible(false)}
+            className="flex-shrink-0 text-yellow-500 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors"
+            aria-label="Dismiss notification"
+          >
+            <X className="h-5 w-5" />
+          </button>
         </div>
-        <button
-          onClick={() => setIsVisible(false)}
-          className="p-1 hover:bg-amber-400/20 rounded-lg transition-colors flex-shrink-0"
-          aria-label="Dismiss banner"
-        >
-          <X className="h-4 w-4 text-amber-300" />
-        </button>
       </div>
     </div>
   )

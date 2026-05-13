@@ -14,7 +14,6 @@ import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 import { ChatbotWidget } from "@/components/chatbot-widget"
 import { NavigationHandler } from "@/components/navigation-handler"
-import { MaintenanceBanner } from "@/components/maintenance-banner"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import Image from "next/image"
 import { useEffect, useState } from "react"
@@ -31,10 +30,8 @@ export default function HomePage() {
   }, [])
 
   return (
-    <>
-      <MaintenanceBanner />
-      <SidebarProvider>
-        <NavigationHandler />
+    <SidebarProvider>
+      <NavigationHandler />
       <AppSidebar />
       <SidebarInset>
         <header
@@ -106,6 +103,5 @@ export default function HomePage() {
       </SidebarInset>
       <ChatbotWidget />
     </SidebarProvider>
-    </>
   )
 }

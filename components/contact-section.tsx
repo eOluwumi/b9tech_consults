@@ -64,17 +64,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Business Email</h4>
-                    <p className="text-slate-300">b9techconsults@gmail.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center flex-shrink-0 animate-glow">
-                    <Mail className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white mb-1">Founder&apos;s Email</h4>
-                    <p className="text-slate-300">enocholuwumi77@gmail.com</p>
+                    <a href="mailto:enoch@barternaija.com.ng" className="text-slate-300 hover:text-white transition-colors">enoch@barternaija.com.ng</a>
                   </div>
                 </div>
 

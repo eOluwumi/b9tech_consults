@@ -23,7 +23,7 @@ export function AboutSection() {
             Pioneering <span className="text-blue-400">Ethical AI</span>
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Meet the visionary leader driving B9TECH CONSULTS' mission to create AI that serves humanity
+            Meet the founder shaping B9TECH CONSULTS' approach to responsible technology
           </p>
         </div>
 
@@ -67,15 +67,15 @@ export function AboutSection() {
 
             <div className="space-y-6">
               <p className="text-slate-300 leading-relaxed">
-                Enoch Oluwumi is a visionary leader in ethical AI development, dedicated to creating technology that
-                empowers communities rather than exploiting them. With a deep understanding of both cutting-edge AI
-                capabilities and the social responsibility that comes with them, he leads B9TECH CONSULTS in pioneering
-                Benign Technology.
+                Enoch Oluwumi leads B9TECH CONSULTS with a focus on responsible technology, practical AI adoption and digital systems that
+                serve people. His work brings together technical problem-solving and an emphasis on privacy, transparency and human oversight. With an understanding of AI
+                capabilities and the social responsibility that comes with them, he guides B9TECH CONSULTS in developing
+                responsible technology.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                Under his leadership, B9TECH CONSULTS has become a trusted partner for organizations seeking to
-                implement AI solutions that prioritize privacy, security, and human dignity. His commitment to ethical
-                innovation has positioned the company at the forefront of responsible AI development in Africa and
+                B9TECH CONSULTS applies these principles to its product work and technology services. Its approach is to understand the operational problem first, define a realistic scope, and
+                build with security, usability and accountability in view. The company prioritises
+                practical innovation and responsible AI adoption for organisations in Africa and
                 beyond.
               </p>
             </div>

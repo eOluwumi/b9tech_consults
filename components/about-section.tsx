@@ -34,7 +34,7 @@ export function AboutSection() {
               <div className="relative w-full h-full rounded-3xl overflow-hidden">
                 <Image
                   src="/images/exquisite_dp.jpg"
-                  alt="Enoch Oluwumi - Co-founder & CEO"
+                  alt="Enoch Oluwumi, Founder and CEO of B9TECH CONSULTS"
                   fill
                   className="object-cover object-center"
                   style={{ objectPosition: "50% 15%" }}
@@ -58,7 +58,7 @@ export function AboutSection() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-2 font-heading">Enoch Oluwumi</h3>
               <p className="text-xl text-blue-400 font-semibold mb-6">
-                Co-founder & Chief Executive Officer
+                Founder & Chief Executive Officer
               </p>
               <p className="text-lg text-slate-300 leading-relaxed mb-6">
                 Building ethical AI for Africa and the world
@@ -78,22 +78,6 @@ export function AboutSection() {
                 innovation has positioned the company at the forefront of responsible AI development in Africa and
                 beyond.
               </p>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 py-8">
-              <div className="text-center glass p-6 rounded-xl animate-float">
-                <div className="text-3xl font-bold text-blue-400 mb-2 animate-pulse-neon">5+</div>
-                <div className="text-sm text-slate-400">Years Experience</div>
-              </div>
-              <div className="text-center glass p-6 rounded-xl animate-float" style={{ animationDelay: '0.2s' }}>
-                <div className="text-3xl font-bold text-purple-400 mb-2 animate-pulse-neon">50+</div>
-                <div className="text-sm text-slate-400">Projects Delivered</div>
-              </div>
-              <div className="text-center glass p-6 rounded-xl animate-float" style={{ animationDelay: '0.4s' }}>
-                <div className="text-3xl font-bold text-pink-400 mb-2 animate-pulse-neon">100%</div>
-                <div className="text-sm text-slate-400">Ethical Focus</div>
-              </div>
             </div>
 
             {/* CTA Buttons */}

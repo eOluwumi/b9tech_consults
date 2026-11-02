@@ -139,7 +139,7 @@ export function Footer() {
                       <p className="text-blue-400 text-xs">Co-founder & CEO</p>
                     </div>
                   </div>
-                  <a href="https://www.linkedin.com/in/enoch-oluwumi-b075a2386/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                  <a href="https://ng.linkedin.com/in/enoch-oluwumi-b075a2386" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-blue-400 transition-colors">
                     <Linkedin className="h-4 w-4" />
                     Connect on LinkedIn
                   </a>

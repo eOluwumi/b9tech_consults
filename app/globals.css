@@ -192,3 +192,74 @@ html {
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+
+/* Site-wide theme treatment: every section, card, form and footer follows the selected theme. */
+html.light body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+html.light main > section > section,
+html.light main > footer {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+html.light main > section > section > .absolute.inset-0,
+html.light main > section > section > div.absolute.inset-0 {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 55%, #f8fafc 100%) !important;
+}
+html.light main > section > section .glass,
+html.light main > footer .glass {
+  background: rgba(255,255,255,.78);
+  border-color: rgba(15,23,42,.12);
+  box-shadow: 0 12px 32px rgba(15,23,42,.06);
+  backdrop-filter: blur(14px);
+}
+html.light main > section > section .text-white,
+html.light main > footer .text-white {
+  color: #172033 !important;
+}
+html.light main > section > section .text-slate-200,
+html.light main > section > section .text-slate-300,
+html.light main > section > section .text-slate-400,
+html.light main > section > section .text-slate-500,
+html.light main > footer .text-slate-200,
+html.light main > footer .text-slate-300,
+html.light main > footer .text-slate-400,
+html.light main > footer .text-slate-500 {
+  color: #475569 !important;
+}
+html.light main > section > section button.text-white,
+html.light main > section > section a.text-white,
+html.light main > footer button.text-white,
+html.light main > footer a.text-white {
+  color: #fff !important;
+}
+html.light main > section > section input,
+html.light main > section > section textarea,
+html.light main > footer input {
+  color: #172033 !important;
+  background: rgba(255,255,255,.92) !important;
+  border-color: #cbd5e1 !important;
+}
+html.light main > section > section input::placeholder,
+html.light main > section > section textarea::placeholder,
+html.light main > footer input::placeholder {
+  color: #64748b !important;
+}
+html.light main > section > section .border-white\/20,
+html.light main > section > section .border-white\/30,
+html.light main > footer .border-white\/20 {
+  border-color: rgba(15,23,42,.14) !important;
+}
+html.light main > section > section .bg-white\/10,
+html.light main > footer .bg-white\/10 {
+  background-color: rgba(15,23,42,.05) !important;
+}
+html.light main > section > section .text-transparent {
+  color: transparent !important;
+}
+html.light main > section > section .text-white svg,
+html.light main > footer .text-white svg {
+  color: inherit;
+}

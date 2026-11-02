@@ -3,23 +3,10 @@
 import React from "react"
 
 import { Separator } from "@/components/ui/separator"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Linkedin, Mail, Phone, Sparkles, Send, Heart } from "lucide-react"
+import { Linkedin, Mail, Phone, Sparkles, Heart } from "lucide-react"
 import Image from "next/image"
-import { useState } from "react"
 
 export function Footer() {
-  const [email, setEmail] = useState("")
-  const [isSubscribed, setIsSubscribed] = useState(false)
-
-  const handleNewsletterSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!email) return
-    setIsSubscribed(true)
-    setEmail("")
-    setTimeout(() => setIsSubscribed(false), 3000)
-  }
 
   const socialLinks = [
     { icon: Linkedin, href: "https://www.linkedin.com/company/b9tech", label: "B9TECH on LinkedIn", color: "hover:text-blue-400 hover:bg-blue-500/20" },
@@ -63,33 +50,7 @@ export function Footer() {
                 ))}
               </div>
 
-              <div className="glass p-6 rounded-xl">
-                <h4 className="text-white font-semibold mb-3 flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-blue-400" />
-                  Stay Updated
-                </h4>
-                <p className="text-slate-400 text-sm mb-4">
-                  Get weekly AI insights and updates delivered to your inbox.
-                </p>
-                <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
-                  <Input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
-                    className="flex-1 glass border-white/20 text-white placeholder-slate-400 focus:ring-blue-400 h-10"
-                    required
-                  />
-                  <Button type="submit" className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-4 h-10">
-                    <Send className="h-4 w-4" />
-                  </Button>
-                </form>
-                {isSubscribed && (
-                  <p className="text-green-400 text-sm mt-2 animate-fade-in">
-                    ✓ Thanks for subscribing!
-                  </p>
-                )}
-              </div>
+              <p className="text-slate-400 text-sm">B9TECH Insights is in preparation. Newsletter enrolment will open when the publication is ready.</p>
             </div>
 
             <div>

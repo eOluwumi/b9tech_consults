@@ -6,11 +6,37 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
+const siteUrl = "https://b9tech.barternaija.com.ng"
+
 export const metadata: Metadata = {
-  title: "B9Tech Consults - Benign Technology for Nigeria",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "B9TECH CONSULTS | Ethical AI & Technology Solutions",
+    template: "%s | B9TECH CONSULTS",
+  },
   description:
-    "Nigerian-owned innovation lab building ethical technology solutions. Home of B3 (BringBackBarter) - the people's trading platform.",
-  generator: 'Next.js'
+    "B9TECH CONSULTS is a Nigerian technology consultancy focused on responsible AI, secure digital systems, and human-centred innovation.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "B9TECH CONSULTS",
+    title: "B9TECH CONSULTS | Ethical AI & Technology Solutions",
+    description:
+      "Responsible AI, secure digital systems, and human-centred technology innovation from Nigeria.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "B9TECH CONSULTS | Ethical AI & Technology Solutions",
+    description:
+      "Responsible AI, secure digital systems, and human-centred technology innovation from Nigeria.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({

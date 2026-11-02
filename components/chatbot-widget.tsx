@@ -27,7 +27,7 @@ const quickReplies = [
   "What is B3 technology?",
   "How do you ensure ethical AI?",
   "Contact information",
-  "Portfolio examples"
+  "Show me your public work"
 ]
 
 export function ChatbotWidget() {
@@ -77,7 +77,7 @@ export function ChatbotWidget() {
     const input = userInput.toLowerCase()
 
     if (input.includes('ai services') || input.includes('services')) {
-      return "B9TECH specializes in ethical AI solutions including healthcare diagnostics, financial security systems, educational platforms, and smart city technologies. All our AI systems prioritize human values and African context."
+      return "B9TECH focuses on responsible AI strategy, secure digital systems, AI-powered platforms and custom software development. Please contact us to discuss your requirements and confirm the right scope."
     }
 
     if (input.includes('b3') || input.includes('bartering')) {
@@ -89,11 +89,11 @@ export function ChatbotWidget() {
     }
 
     if (input.includes('contact') || input.includes('reach')) {
-      return "You can reach us through our contact form on the website, or email us at b9techconsults@gmail.com. You can also reach the founder directly at enocholuwumi77@gmail.com. We're also active on LinkedIn and Twitter. Would you like me to help you navigate to the contact section?"
+      return "You can reach B9TECH at enoch@barternaija.com.ng or use the contact section on this website. Our office is based in Lagos, Nigeria."
     }
 
     if (input.includes('portfolio') || input.includes('projects') || input.includes('work')) {
-      return "We've worked on exciting projects including AI healthcare systems, secure banking platforms, educational AI, and smart city solutions. Check out our portfolio section to see detailed case studies and metrics."
+      return "Our public flagship product is B3: BringBackBarter, a live digital marketplace for barter and community-led commerce. We publish additional case studies when project scope and client permissions allow public disclosure."
     }
 
     return "That's an interesting question! I'd be happy to help you learn more about B9TECH. Could you tell me more about what you're interested in? We specialize in ethical AI, B3 bartering technology, and innovative solutions for African businesses."

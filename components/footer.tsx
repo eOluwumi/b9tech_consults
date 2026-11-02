@@ -63,7 +63,7 @@ export function Footer() {
                 <li><a href="#services" className="hover:text-emerald-400 transition-colors">Secure AI Systems</a></li>
                 <li><a href="#services" className="hover:text-emerald-400 transition-colors">AI-Powered Platforms</a></li>
                 <li><a href="#services" className="hover:text-emerald-400 transition-colors">Custom AI Development</a></li>
-                <li><a href="#newsletter" className="hover:text-blue-400 transition-colors">Daily AI Insights Newsletter</a></li>
+                <li><a href="#newsletter" className="hover:text-blue-400 transition-colors">B9TECH Insights</a></li>
               </ul>
             </div>
 
@@ -93,7 +93,7 @@ export function Footer() {
                     </div>
                     <div>
                       <p className="text-white font-medium text-sm">Enoch Oluwumi</p>
-                      <p className="text-blue-400 text-xs">Co-founder & CEO</p>
+                      <p className="text-blue-400 text-xs">Founder & CEO</p>
                     </div>
                   </div>
                   <a href="https://ng.linkedin.com/in/enoch-oluwumi-b075a2386" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-blue-400 transition-colors">

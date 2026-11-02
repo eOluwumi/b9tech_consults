@@ -32,7 +32,7 @@ export function B3Section() {
             </span>
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Our flagship platform revolutionizes traditional commerce through secure, AI-powered bartering technology.
+            Our flagship platform revolutionizes traditional commerce through secure, digital barter technology.
             Experience the future of cashless trading.
           </p>
         </div>
@@ -51,7 +51,7 @@ export function B3Section() {
                     <div className="flex items-center gap-2 mt-2">
                       <Badge className="bg-blue-500 hover:bg-blue-600 text-white animate-pulse-neon">Live Platform</Badge>
                       <Badge variant="outline" className="border-white/30 text-white">
-                        AI-Powered
+                        Digital marketplace
                       </Badge>
                     </div>
                   </div>
@@ -90,8 +90,8 @@ export function B3Section() {
             {[
               {
                 icon: Shield,
-                title: "AI-Powered Trust",
-                description: "Advanced algorithms ensure secure, verified exchanges between community members",
+                title: "Trust-aware marketplace",
+                description: "A product experience designed to support clearer, more confident exchanges between community members",
                 gradient: "from-emerald-500 to-teal-500",
               },
               {

@@ -112,9 +112,12 @@ export function AboutSection() {
                 size="lg"
                 variant="outline"
                 className="glass border-white/20 text-white hover:bg-white/10 bg-transparent"
+                asChild
               >
-                <Mail className="mr-2 h-5 w-5" />
-                Send Message
+                <a href="mailto:enoch@barternaija.com.ng">
+                  <Mail className="mr-2 h-5 w-5" />
+                  Send Message
+                </a>
               </Button>
             </div>
           </div>

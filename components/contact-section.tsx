@@ -124,7 +124,7 @@ export function ContactSection() {
                     asChild
                   >
                     <a
-                      href="https://www.linkedin.com/in/enoch-oluwumi-b075a2386/"
+                      href="https://ng.linkedin.com/in/enoch-oluwumi-b075a2386"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

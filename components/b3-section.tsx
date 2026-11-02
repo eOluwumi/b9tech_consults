@@ -79,7 +79,7 @@ export function B3Section() {
                   </a>
                 </Button>
                 <p className="text-center text-slate-400 text-sm">
-                  Join the revolution • Trade without cash • Build community
+                  Explore the platform • Discover barter • Connect with community
                 </p>
               </div>
             </CardContent>

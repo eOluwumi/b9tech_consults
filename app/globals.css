@@ -263,3 +263,9 @@ html.light main > section > section .text-white svg,
 html.light main > footer .text-white svg {
   color: inherit;
 }
+
+/* Preserve white icon contrast on coloured feature tiles in light mode. */
+html.light main > section > section svg.text-white,
+html.light main > footer svg.text-white {
+  color: #fff !important;
+}

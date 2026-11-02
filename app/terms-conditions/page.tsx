@@ -193,8 +193,8 @@ export default function TermsConditionsPage() {
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white mt-8 mb-4">XVII. Contact</h2>
               <p>
                 For questions, support, or complaints, contact us at:{" "}
-                <a href="mailto:b9techconsults@gmail.com" className="text-emerald-600 hover:text-emerald-700">
-                  b9techconsults@gmail.com
+                <a href="mailto:enoch@barternaija.com.ng" className="text-emerald-600 hover:text-emerald-700">
+                  enoch@barternaija.com.ng
                 </a>
               </p>
 

@@ -140,8 +140,8 @@ export default function PrivacyPolicyPage() {
                 </ul>
                 <p className="text-blue-700 dark:text-blue-300 mt-3">
                   To exercise these rights, contact us via{" "}
-                  <a href="mailto:b9techconsults@gmail.com" className="underline">
-                    b9techconsults@gmail.com
+                  <a href="mailto:enoch@barternaija.com.ng" className="underline">
+                    enoch@barternaija.com.ng
                   </a>
                   .
                 </p>
@@ -191,14 +191,14 @@ export default function PrivacyPolicyPage() {
                   </p>
                   <p>
                     Business Email:{" "}
-                    <a href="mailto:b9techconsults@gmail.com" className="text-blue-600 hover:text-blue-700">
-                      b9techconsults@gmail.com
+                    <a href="mailto:enoch@barternaija.com.ng" className="text-blue-600 hover:text-blue-700">
+                      enoch@barternaija.com.ng
                     </a>
                   </p>
                   <p>
                     Founder&apos;s Email:{" "}
-                    <a href="mailto:enocholuwumi77@gmail.com" className="text-blue-600 hover:text-blue-700">
-                      enocholuwumi77@gmail.com
+                    <a href="mailto:enoch@barternaija.com.ng" className="text-blue-600 hover:text-blue-700">
+                      enoch@barternaija.com.ng
                     </a>
                   </p>
                   <p>

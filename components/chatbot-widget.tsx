@@ -16,7 +16,7 @@ interface Message {
 const initialMessages: Message[] = [
   {
     id: '1',
-    text: "Hello! I'm B9Bot, your AI assistant. How can I help you learn more about B9TECH's ethical AI solutions today?",
+    text: "Hello! I'm the B9TECH website guide. I can point you to our services, public product and contact details.",
     sender: 'bot',
     timestamp: new Date()
   }
@@ -59,7 +59,7 @@ export function ChatbotWidget() {
     setInputValue("")
     setIsTyping(true)
 
-    // Simulate bot response (replace with actual API call)
+    // Provide a scripted website-guide response
     setTimeout(() => {
       const botResponse = getBotResponse(text)
       const botMessage: Message = {
@@ -70,7 +70,7 @@ export function ChatbotWidget() {
       }
       setMessages(prev => [...prev, botMessage])
       setIsTyping(false)
-    }, 1000 + Math.random() * 2000) // Random delay between 1-3 seconds
+    }, 350) // Random delay between 1-3 seconds
   }
 
   const getBotResponse = (userInput: string): string => {
@@ -126,8 +126,8 @@ export function ChatbotWidget() {
                 <Bot className="h-4 w-4 text-white" />
               </div>
               <div>
-                <CardTitle className="text-white text-sm">B9Bot</CardTitle>
-                <p className="text-slate-400 text-xs">AI Assistant</p>
+                <CardTitle className="text-white text-sm">B9TECH Guide</CardTitle>
+                <p className="text-slate-400 text-xs">Website Guide</p>
               </div>
             </div>
             <Button

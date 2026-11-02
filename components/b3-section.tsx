@@ -5,24 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Users, Repeat, TrendingUp, Sparkles, Globe, Shield, Zap } from "lucide-react"
 import Image from "next/image"
-import { useEffect, useState } from "react"
 
-const AnimatedCounter = ({ end, duration = 2000 }: { end: number; duration?: number }) => {
-  const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    let startTime: number
-    const animate = (currentTime: number) => {
-      if (!startTime) startTime = currentTime
-      const progress = Math.min((currentTime - startTime) / duration, 1)
-      setCount(Math.floor(progress * end))
-      if (progress < 1) requestAnimationFrame(animate)
-    }
-    requestAnimationFrame(animate)
-  }, [end, duration])
-
-  return <span>{count}</span>
-}
 
 export function B3Section() {
   return (
@@ -77,33 +60,10 @@ export function B3Section() {
             </CardHeader>
 
             <CardContent className="p-8 space-y-8">
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6">
-                <div className="text-center p-6 glass rounded-xl">
-                  <div className="flex items-center justify-center mb-3">
-                    <Users className="h-8 w-8 text-blue-400 animate-float" />
-                  </div>
-                  <div className="text-3xl font-bold text-white">
-                    <AnimatedCounter end={200} />+
-                  </div>
-                  <div className="text-sm text-slate-400">Active Traders</div>
-                </div>
-                <div className="text-center p-6 glass rounded-xl">
-                  <div className="flex items-center justify-center mb-3">
-                    <Repeat className="h-8 w-8 text-purple-400 animate-float" style={{ animationDelay: '0.2s' }} />
-                  </div>
-                  <div className="text-3xl font-bold text-white">
-                    <AnimatedCounter end={150} />+
-                  </div>
-                  <div className="text-sm text-slate-400">Successful Trades</div>
-                </div>
-                <div className="text-center p-6 glass rounded-xl">
-                  <div className="flex items-center justify-center mb-3">
-                    <TrendingUp className="h-8 w-8 text-pink-400 animate-float" style={{ animationDelay: '0.4s' }} />
-                  </div>
-                  <div className="text-3xl font-bold text-white">₦0</div>
-                  <div className="text-sm text-slate-400">Cash Required</div>
-                </div>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <div className="glass rounded-xl p-5 text-center"><Users className="h-7 w-7 text-blue-400 mx-auto mb-3" /><p className="text-white font-semibold">Community-led</p><p className="text-slate-400 text-xs mt-1">Designed around people and exchange</p></div>
+                <div className="glass rounded-xl p-5 text-center"><Repeat className="h-7 w-7 text-purple-400 mx-auto mb-3" /><p className="text-white font-semibold">Barter-first</p><p className="text-slate-400 text-xs mt-1">Trade value beyond cash transactions</p></div>
+                <div className="glass rounded-xl p-5 text-center"><Shield className="h-7 w-7 text-emerald-400 mx-auto mb-3" /><p className="text-white font-semibold">Digital platform</p><p className="text-slate-400 text-xs mt-1">Explore the live product</p></div>
               </div>
 
               {/* CTA */}

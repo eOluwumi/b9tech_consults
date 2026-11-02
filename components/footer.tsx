@@ -5,7 +5,7 @@ import React from "react"
 import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Linkedin, Mail, Phone, Sparkles, Twitter, Github, Youtube, Instagram, Send, Heart } from "lucide-react"
+import { Linkedin, Mail, Phone, Sparkles, Send, Heart } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -22,11 +22,7 @@ export function Footer() {
   }
 
   const socialLinks = [
-    { icon: Linkedin, href: "https://www.linkedin.com/company/b9tech", label: "Company LinkedIn", color: "hover:text-blue-400 hover:bg-blue-500/20" },
-    { icon: Twitter, href: "#", label: "Twitter", color: "hover:text-sky-400 hover:bg-sky-500/20" },
-    { icon: Github, href: "#", label: "GitHub", color: "hover:text-gray-300 hover:bg-gray-500/20" },
-    { icon: Youtube, href: "#", label: "YouTube", color: "hover:text-red-400 hover:bg-red-500/20" },
-    { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-pink-400 hover:bg-pink-500/20" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/b9tech", label: "B9TECH on LinkedIn", color: "hover:text-blue-400 hover:bg-blue-500/20" },
   ]
 
   return (
@@ -113,10 +109,10 @@ export function Footer() {
             <div>
               <h4 className="font-bold text-white mb-6">Contact</h4>
               <div className="space-y-4 text-slate-400">
-                <p className="flex items-center gap-3">
+                <a href="mailto:enoch@barternaija.com.ng" className="flex items-center gap-3 hover:text-white transition-colors">
                   <Mail className="h-4 w-4 text-emerald-400" />
-                  b9techconsults@gmail.com
-                </p>
+                  enoch@barternaija.com.ng
+                </a>
                 <p className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-emerald-400" />
                   +234 812 848 1777

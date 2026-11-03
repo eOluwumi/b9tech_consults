@@ -203,8 +203,8 @@ export default function PrivacyPolicyPage() {
                   </p>
                   <p>
                     Website:{" "}
-                    <a href="https://www.b9techafrica.com" className="text-blue-600 hover:text-blue-700">
-                      www.b9techafrica.com
+                    <a href="https://b9tech.barternaija.com.ng" className="text-blue-600 hover:text-blue-700">
+                      b9tech.barternaija.com.ng
                     </a>
                   </p>
                 </div>

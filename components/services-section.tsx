@@ -138,7 +138,7 @@ export function ServicesSection() {
                 className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-glow"
               >
                 <Sparkles className="mr-3 h-5 w-5" />
-                Start Your AI Journey
+                Discuss an Enterprise Requirement
                 <ArrowRight className="ml-3 h-5 w-5" />
               </Button>
             </CardContent>

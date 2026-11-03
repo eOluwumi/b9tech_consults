@@ -22,14 +22,10 @@ export function ContactSection() {
             <Sparkles className="h-4 w-4 text-blue-400" />
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white font-heading">
-            Start Your{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              AI Journey
-            </span>
+            Start a Technology Conversation
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Ready to transform your organization with ethical AI? Let's discuss how we can help bring your vision to
-            life with cutting-edge technology and human-centered design.
+            Tell us about your organisation, the problem you need to solve and the outcome you want to achieve. We will use an initial conversation to understand the requirement and assess whether there is a suitable fit.
           </p>
         </div>
 

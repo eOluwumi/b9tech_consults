@@ -71,10 +71,10 @@ export function ServicesSection() {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full mb-8">
             <Sparkles className="h-5 w-5 text-blue-400" />
-            <span className="text-blue-300 font-semibold">AI-Powered Services</span>
+            <span className="text-blue-300 font-semibold">Enterprise Technology Capabilities</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent font-heading">
-            Ethical AI Solutions
+            Technology Solutions for Business
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
             We provide cutting-edge AI consulting and development services designed to help organizations harness the
@@ -125,7 +125,7 @@ export function ServicesSection() {
                   <Zap className="h-8 w-8 text-white" />
                 </div>
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-heading">Ready to Transform with AI?</h3>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-heading">Have a technology challenge to solve?</h3>
               <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto">
                 Let's discuss how B9Tech can help your organization leverage ethical AI to solve complex challenges and
                 create meaningful impact.

@@ -11,11 +11,11 @@ const siteUrl = "https://b9tech.barternaija.com.ng"
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "B9TECH CONSULTS | Ethical AI & Technology Solutions",
+    default: "B9TECH CONSULTS | Enterprise Technology & Responsible AI",
     template: "%s | B9TECH CONSULTS",
   },
   description:
-    "B9TECH CONSULTS is a Nigerian technology consultancy focused on responsible AI, secure digital systems, and human-centred innovation.",
+    "B9TECH CONSULTS is a Nigerian technology consultancy focused on enterprise AI strategy, data science, secure digital systems, software engineering and responsible digital transformation.",
   alternates: {
     canonical: "/",
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "B9TECH CONSULTS",
     title: "B9TECH CONSULTS | Ethical AI & Technology Solutions",
     description:
-      "Responsible AI, secure digital systems, and human-centred technology innovation from Nigeria.",
+      "Enterprise AI, data science, secure digital systems and responsible technology delivery from Nigeria.",
   },
   twitter: {
     card: "summary_large_image",

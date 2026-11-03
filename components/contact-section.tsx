@@ -101,7 +101,7 @@ export function ContactSection() {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-white mb-1">Enoch Oluwumi</h3>
                     <p className="text-blue-400 font-medium mb-2">Founder & Chief Executive Officer</p>
-                    <p className="text-slate-300 text-sm">Building ethical AI for Africa and the world</p>
+                    <p className="text-slate-300 text-sm">Building practical, responsible technology</p>
                   </div>
                 </div>
                 <div className="px-6 pb-6">

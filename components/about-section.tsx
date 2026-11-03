@@ -20,7 +20,7 @@ export function AboutSection() {
             <span className="text-blue-300 font-medium">About Our Leadership</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">
-            Pioneering <span className="text-blue-400">Ethical AI</span>
+            Advancing <span className="text-blue-400">Responsible Technology</span>
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Meet the founder shaping B9TECH CONSULTS' approach to responsible technology
@@ -61,7 +61,7 @@ export function AboutSection() {
                 Founder & Chief Executive Officer
               </p>
               <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                Building ethical AI for Africa and the world
+                Building practical, responsible technology
               </p>
             </div>
 

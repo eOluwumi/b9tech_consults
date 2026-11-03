@@ -110,7 +110,7 @@ export function HeroSection() {
                   B9TECH CONSULTS
                 </span>
               </h1>
-              <p className="text-blue-300 font-semibold text-lg">Ethical AI Solutions</p>
+              <p className="text-blue-300 font-semibold text-lg">Responsible Technology & AI</p>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ export function HeroSection() {
           {/* Animated Badge */}
           <div className="inline-flex items-center gap-3 glass px-6 py-3 rounded-full border border-white/20">
             <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-            <span className="text-blue-300 font-medium">🇳🇬 Nigerian AI Innovation</span>
+            <span className="text-blue-300 font-medium">🇳🇬 Technology built with African context</span>
             <Sparkles className="h-4 w-4 text-blue-400" />
           </div>
 
@@ -135,11 +135,10 @@ export function HeroSection() {
                 </span>
               </span>
               <br />
-              AI Solutions
+              Technology Solutions
             </h2>
             <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              B9TECH CONSULTS pioneers <span className="text-blue-400 font-semibold">Benign Technology</span> - AI
-              systems that protect, empower, and serve humanity in our rapidly evolving digital world.
+              B9TECH CONSULTS helps organisations apply responsible AI, build secure digital systems and turn technology opportunities into practical outcomes.
             </p>
           </div>
         </div>
@@ -160,14 +159,6 @@ export function HeroSection() {
             className="px-10 py-6 text-lg font-semibold rounded-xl border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-md transition-all duration-300 glass"
           >
             <a href="/investors">Investor & Partner Overview</a>
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => scrollToSection("about")}
-            className="px-10 py-6 text-lg font-semibold rounded-xl border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-md transition-all duration-300 glass"
-          >
-            Investor & Partner Overview
           </Button>
         </div>
 
@@ -197,8 +188,8 @@ export function HeroSection() {
             },
             {
               icon: Globe,
-              title: "Global Impact",
-              desc: "Local expertise, worldwide reach",
+              title: "Local Context",
+              desc: "Technology grounded in real needs",
               color: "from-pink-500 to-orange-500",
               section: "about",
             },

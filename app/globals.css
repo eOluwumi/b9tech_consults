@@ -302,3 +302,11 @@ html.light footer .hover\\:text-white:hover {
 html.light footer .hover\\:bg-blue-500\\/20:hover {
   background-color: rgba(37, 99, 235, 0.12) !important;
 }
+
+/* Attribute selectors avoid escaping Tailwind's punctuation in CSS selectors. */
+html.light footer [class~="hover:text-white"]:hover {
+  color: #0f172a !important;
+}
+html.light footer [class~="hover:bg-blue-500/20"]:hover {
+  background-color: rgba(37, 99, 235, 0.12) !important;
+}

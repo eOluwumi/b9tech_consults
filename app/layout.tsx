@@ -23,15 +23,15 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "B9TECH CONSULTS",
-    title: "B9TECH CONSULTS | Ethical AI & Technology Solutions",
+    title: "B9TECH CONSULTS | Enterprise Technology & Responsible AI",
     description:
       "Enterprise AI, data science, secure digital systems and responsible technology delivery from Nigeria.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "B9TECH CONSULTS | Ethical AI & Technology Solutions",
+    title: "B9TECH CONSULTS | Enterprise Technology & Responsible AI",
     description:
-      "Responsible AI, secure digital systems, and human-centred technology innovation from Nigeria.",
+      "Enterprise AI, data science, secure digital systems and responsible technology delivery from Nigeria.",
   },
   robots: {
     index: true,

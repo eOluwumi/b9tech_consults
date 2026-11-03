@@ -54,7 +54,7 @@ const services = [
     gradient: "from-indigo-500 to-purple-500",
     hoverGradient: "from-indigo-600 to-purple-600",
   },
-
+]
 
 export function ServicesSection() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)

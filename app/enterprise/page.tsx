@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer"
 
 const capabilities = [
   {
-    icon: BrainCircuit,
+    icon: Brain,
     title: "AI strategy & implementation",
     description: "Identify high-value AI use cases, assess readiness and move from proof of concept to governed implementation.",
     deliverables: ["AI opportunity and readiness assessment", "Use-case prioritisation and solution design", "Model evaluation and human oversight planning"],

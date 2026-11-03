@@ -2,6 +2,8 @@ import Link from "next/link"
 import { ArrowRight, BarChart3, BriefcaseBusiness, Building2, Compass, FileCheck2, Lightbulb, Mail, ShieldCheck, Target } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { CorporateHeader } from "@/components/corporate-header"
+import { Footer } from "@/components/footer"
 
 const thesis = [
   { icon: Target, title: "A focused problem space", body: "Organisations need practical ways to adopt AI and digital systems while managing cost, complexity, security and trust." },
@@ -26,7 +28,9 @@ export const metadata = {
 
 export default function InvestorsPage() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <>
+      <CorporateHeader />
+      <main className="min-h-screen bg-background text-foreground">
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 dark:from-black dark:via-indigo-950 dark:to-slate-950" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
@@ -89,6 +93,8 @@ export default function InvestorsPage() {
         </div>
       </section>
       <div className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground"><Link href="/" className="underline underline-offset-4">Return to B9TECH homepage</Link></div>
-    </main>
+      </main>
+      <Footer />
+    </>
   )
 }

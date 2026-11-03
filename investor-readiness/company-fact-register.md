@@ -5,11 +5,11 @@
 
 | Fact | Current working position | Evidence required | Status |
 |---|---|---|---|
-| Brand | B9TECH CONSULTS | Brand ownership / usage records | Needs confirmation |
-| Legal entity name | Not established in this repository | CAC certificate / registration extract | Open |
-| Entity type | Not established | CAC record | Open |
-| Registration number | Not supplied | CAC record | Open |
-| Incorporation date | Not supplied | CAC record | Open |
+| Brand / trading name | B9TECH CONSULTS | Founder confirmation; brand usage records to be retained | Confirmed by founder |
+| Legal entity name | B9 TECH CONSULT LTD | CAC Certificate of Incorporation details supplied by founder | Confirmed from certificate details supplied; retain original for diligence |
+| Entity type | Private company limited by shares | CAC Certificate of Incorporation details supplied by founder | Confirmed from certificate details supplied |
+| Registration number | 8493599 | CAC Certificate of Incorporation | Confirmed from certificate details supplied |
+| Incorporation date | 19 May 2025 | CAC Certificate of Incorporation | Confirmed from certificate details supplied |
 | Registered office | Not supplied | CAC record | Open |
 | Ownership / cap table | Not supplied | Founder-approved cap table | Open |
 | Directors / governance | Not supplied | Statutory records / board resolutions | Open |
@@ -25,6 +25,10 @@
 | IP ownership | Not documented | Founder assignments, contractor agreements, software licences | Open |
 | Funding sought | Not specified | Approved funding strategy and use-of-funds model | Open |
 | Valuation | Not specified | Valuation rationale and supporting financial model | Open |
+
+## Corporate identity note
+
+Use **B9 TECH CONSULT LTD** as the legal contracting and corporate identity, subject to checking the original CAC certificate and current CAC status where required. Use **B9TECH CONSULTS** as the brand / trading name in public-facing communications. Do not present the brand name as the registered legal entity. The founder supplied the certificate particulars: private company limited by shares, RC 8493599, incorporated on 19 May 2025 under the Companies and Allied Matters Act 2020.
 
 ## Claims register
 

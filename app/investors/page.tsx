@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, BarChart3, BriefcaseBusiness, Building2, Compass, FileCheck2, Lightbulb, Mail, ShieldCheck, Target } from "lucide-react"
+import { ArrowRight, BarChart3, Briefcase, Building2, Compass, FileCheck, Lightbulb, Mail, ShieldCheck, Target } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CorporateHeader } from "@/components/corporate-header"

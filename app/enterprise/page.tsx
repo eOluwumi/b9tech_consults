@@ -2,6 +2,8 @@ import Link from "next/link"
 import { ArrowRight, BrainCircuit, Database, ShieldCheck, Code2, Workflow, ClipboardCheck, Mail, Building2, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { CorporateHeader } from "@/components/corporate-header"
+import { Footer } from "@/components/footer"
 
 const capabilities = [
   {
@@ -56,7 +58,9 @@ export const metadata = {
 
 export default function EnterprisePage() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <>
+      <CorporateHeader />
+      <main className="min-h-screen bg-background text-foreground">
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 dark:from-black dark:via-blue-950 dark:to-slate-950" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
@@ -155,6 +159,8 @@ export default function EnterprisePage() {
         </div>
       </section>
       <div className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground"><Link href="/" className="underline underline-offset-4">Return to B9TECH homepage</Link></div>
-    </main>
+      </main>
+      <Footer />
+    </>
   )
 }

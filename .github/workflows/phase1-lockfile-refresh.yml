@@ -1,0 +1,49 @@
+name: Refresh Phase 1 dependency lockfile
+
+on:
+  push:
+    branches:
+      - fix/phase1-security-theme
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase1-lockfile-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repair branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/phase1-security-theme
+          persist-credentials: true
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.28.0
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Regenerate pnpm lockfile
+        run: pnpm install --lockfile-only --no-frozen-lockfile
+      - name: Audit production dependencies
+        id: audit
+        continue-on-error: true
+        run: pnpm audit --prod --audit-level high
+      - name: Commit regenerated lockfile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pnpm-lock.yaml
+          if ! git diff --cached --quiet; then
+            git commit -m "Regenerate pnpm lockfile for patched dependencies"
+            git push origin HEAD:fix/phase1-security-theme
+          else
+            echo "Lockfile already current; no commit required."
+          fi

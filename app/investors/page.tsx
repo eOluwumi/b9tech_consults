@@ -35,7 +35,7 @@ export default function InvestorsPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 dark:from-black dark:via-indigo-950 dark:to-slate-950" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
           <div className="max-w-4xl">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-300/30 bg-indigo-400/10 px-4 py-2 text-sm font-medium text-indigo-100"><BriefcaseBusiness className="h-4 w-4" /> Investor & strategic partner relations</div>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-300/30 bg-indigo-400/10 px-4 py-2 text-sm font-medium text-indigo-100"><Briefcase className="h-4 w-4" /> Investor & strategic partner relations</div>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl">Building useful technology businesses from <span className="text-indigo-300">real operating problems.</span></h1>
             <p className="mt-7 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">B9TECH CONSULTS is developing a technology consultancy and product portfolio centred on responsible AI, digital systems and practical innovation. This page outlines our direction; it is not an offer to sell securities or a representation of verified investment performance.</p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -78,7 +78,7 @@ export default function InvestorsPage() {
           <p className="mt-5 leading-relaxed text-muted-foreground">The following materials form the diligence baseline. They should be assembled and checked before formal fundraising or institutional investment discussions.</p>
         </div>
         <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {diligence.map(([title, body]) => <div key={title} className="flex gap-4 rounded-xl border border-border bg-card p-6"><FileCheck2 className="mt-1 h-5 w-5 shrink-0 text-indigo-600 dark:text-indigo-400" /><div><h3 className="font-semibold">{title}</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p></div></div>)}
+          {diligence.map(([title, body]) => <div key={title} className="flex gap-4 rounded-xl border border-border bg-card p-6"><FileCheck className="mt-1 h-5 w-5 shrink-0 text-indigo-600 dark:text-indigo-400" /><div><h3 className="font-semibold">{title}</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p></div></div>)}
         </div>
         <div className="mt-10 rounded-xl border border-amber-500/30 bg-amber-500/5 p-6">
           <h3 className="font-semibold">Transparency note</h3>

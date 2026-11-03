@@ -133,7 +133,7 @@ export function ContactSection() {
                 <ul className="space-y-3 text-sm text-slate-300">
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse"></div>
-                    Nigerian expertise with global AI standards
+                    Technology grounded in Nigerian and African contexts
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse"></div>
@@ -141,7 +141,7 @@ export function ContactSection() {
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-pulse"></div>
-                    Proven track record with B3 platform
+                    Public flagship product: B3
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-orange-400 rounded-full animate-pulse"></div>

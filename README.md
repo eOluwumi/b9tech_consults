@@ -1,26 +1,23 @@
-# B9Tech Consults
+# B9TECH CONSULTS
 
-B9TECH CONSULTS is live. This repository contains the production Next.js site for B9TECH CONSULTS, the Nigerian innovation lab behind ethical AI solutions and the flagship B3 (BringBackBarter) platform.
+Production Next.js website for B9TECH CONSULTS, a Nigeria-based technology consultancy and product-development business. The public website presents enterprise technology capabilities and B3: BringBackBarter.
 
-## Overview
+## Public routes
 
-The live site showcases B9TECH CONSULTS services, the B3 commerce platform, testimonials, portfolio highlights, newsletter sign-up, and contact flows.
+- `/` — corporate homepage
+- `/enterprise` — enterprise capabilities and engagement approach
+- `/investors` — business direction, investment thesis and diligence baseline
+- `/privacy-policy` — published privacy notice (requires review against actual practices)
+- `/terms-conditions` — B3 terms (requires review against actual product behaviour)
 
 ## Local development
 
-Install dependencies:
-
 ```bash
 pnpm install
-```
-
-Run the site locally:
-
-```bash
 pnpm dev
 ```
 
-Build for production:
+Production build:
 
 ```bash
 pnpm build
@@ -28,15 +25,23 @@ pnpm build
 
 ## Deployment
 
-The site is live and ready for continuous updates. Deploy from this repository with your preferred hosting provider.
+The repository is connected to the B9TECH Vercel project. Production deployment status must be checked in Vercel after changes to `main`.
 
-## Project structure
+## Repository structure
 
-- `app/` – top-level Next.js application and page routing
-- `components/` – reusable UI and page sections
-- `public/` – static images and assets
-- `styles/` – global CSS and theme styles
+- `app/` — Next.js routes, metadata, sitemap and robots policy
+- `components/` — reusable site sections and UI
+- `public/` — static images and brand assets
+- `investor-readiness/` — restricted working drafts and due-diligence preparation
 
-## Notes
+## Investor-readiness materials
 
-Keep live content current by updating the components in `app/` and `components/`, and then deploy the latest version from this repository.
+See [investor-readiness/README.md](./investor-readiness/README.md). All materials are internal drafts until legal identity, ownership, financials, customer evidence, product metrics and IP position have been verified.
+
+## Content and release controls
+
+- Do not invent customers, revenue, users, transactions, certifications, partnerships or performance claims.
+- Treat product roadmap statements separately from shipped functionality.
+- Do not publish draft investor documents without founder approval and supporting evidence.
+- Review privacy and terms content against actual processing and product behaviour with qualified counsel.
+- Keep secrets, credentials and production personal data out of this repository.

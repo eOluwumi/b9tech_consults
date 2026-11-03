@@ -248,13 +248,13 @@ html.light main > section > section textarea::placeholder,
 html.light main > footer input::placeholder {
   color: #64748b !important;
 }
-html.light main > section > section .border-white\/20,
-html.light main > section > section .border-white\/30,
-html.light main > footer .border-white\/20 {
+html.light main > section > section [class~="border-white/20"],
+html.light main > section > section [class~="border-white/30"],
+html.light main > footer [class~="border-white/20"] {
   border-color: rgba(15,23,42,.14) !important;
 }
-html.light main > section > section .bg-white\/10,
-html.light main > footer .bg-white\/10 {
+html.light main > section > section [class~="bg-white/10"],
+html.light main > footer [class~="bg-white/10"] {
   background-color: rgba(15,23,42,.05) !important;
 }
 html.light main > section > section .text-transparent {
@@ -290,10 +290,10 @@ html.light footer .text-blue-400 {
 html.light footer .text-emerald-400 {
   color: #047857 !important;
 }
-html.light footer .bg-white\/10 {
+html.light footer [class~="bg-white/10"] {
   background-color: rgba(15, 23, 42, 0.06) !important;
 }
-html.light footer .border-white\/20 {
+html.light footer [class~="border-white/20"] {
   border-color: rgba(15, 23, 42, 0.16) !important;
 }
 

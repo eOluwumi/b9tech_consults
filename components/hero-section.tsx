@@ -59,7 +59,7 @@ const scrollToSection = (sectionId: string) => {
 
 export function HeroSection() {
   const [currentWord, setCurrentWord] = useState(0)
-  const words = ["Ethical", "Intelligent", "Secure", "Human-Centered"]
+  const words = ["Responsible", "Practical", "Secure", "Human-Centred"]
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -148,12 +148,18 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <Button
             size="lg"
-            onClick={() => scrollToSection("services")}
+            asChild
             className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 animate-glow"
           >
-            <Sparkles className="mr-3 h-5 w-5" />
-            Explore AI Solutions
-            <ArrowRight className="ml-3 h-5 w-5" />
+            <a href="/enterprise"><Sparkles className="mr-3 h-5 w-5" />Explore Enterprise Solutions<ArrowRight className="ml-3 h-5 w-5" /></a>
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            asChild
+            className="px-10 py-6 text-lg font-semibold rounded-xl border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-md transition-all duration-300 glass"
+          >
+            <a href="/investors">Investor & Partner Overview</a>
           </Button>
           <Button
             size="lg"
@@ -161,7 +167,7 @@ export function HeroSection() {
             onClick={() => scrollToSection("about")}
             className="px-10 py-6 text-lg font-semibold rounded-xl border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-md transition-all duration-300 glass"
           >
-            Meet Our CEO
+            Investor & Partner Overview
           </Button>
         </div>
 

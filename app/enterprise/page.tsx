@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, BrainCircuit, Database, ShieldCheck, Code2, Workflow, ClipboardCheck, Mail, Building2, CheckCircle2 } from "lucide-react"
+import { ArrowRight, Brain, Database, ShieldCheck, Code2, GitBranch, ClipboardCheck, Mail, Building2, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CorporateHeader } from "@/components/corporate-header"
@@ -31,7 +31,7 @@ const capabilities = [
     deliverables: ["Security and privacy reviews", "Access-control and risk recommendations", "Responsible AI and governance guidance"],
   },
   {
-    icon: Workflow,
+    icon: GitBranch,
     title: "Automation & digital transformation",
     description: "Improve processes by connecting systems, reducing repetitive work and designing practical digital workflows.",
     deliverables: ["Process mapping and automation opportunities", "Workflow and system integration design", "Adoption and change considerations"],
@@ -66,7 +66,7 @@ export default function EnterprisePage() {
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-300/30 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-100">
-              <Building2 className="h-4 w-4" /> Enterprise technology partner
+              <Building2 className="h-4 w-4" /> Enterprise technology services
             </div>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl">
               Technology that moves your organisation from <span className="text-blue-300">ambition to execution.</span>

@@ -33,9 +33,9 @@ jobs:
       - name: Regenerate pnpm lockfile
         run: pnpm install --lockfile-only --no-frozen-lockfile
       - name: Audit production dependencies
-        id: audit
-        continue-on-error: true
         run: pnpm audit --prod --audit-level high
+      - name: Build application
+        run: pnpm build
       - name: Commit regenerated lockfile
         run: |
           git config user.name "github-actions[bot]"

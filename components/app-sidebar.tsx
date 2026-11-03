@@ -1,7 +1,7 @@
 "use client"
 
 import type * as React from "react"
-import { Home, Users, Briefcase, Phone, ExternalLink } from "lucide-react"
+import { Home, Users, Briefcase, Phone, ExternalLink, Building2, TrendingUp } from "lucide-react"
 import Image from "next/image"
 
 import {

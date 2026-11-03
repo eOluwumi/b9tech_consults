@@ -248,13 +248,13 @@ html.light main > section > section textarea::placeholder,
 html.light main > footer input::placeholder {
   color: #64748b !important;
 }
-html.light main > section > section .border-white\/20,
-html.light main > section > section .border-white\/30,
-html.light main > footer .border-white\/20 {
+html.light main > section > section [class~="border-white/20"],
+html.light main > section > section [class~="border-white/30"],
+html.light main > footer [class~="border-white/20"] {
   border-color: rgba(15,23,42,.14) !important;
 }
-html.light main > section > section .bg-white\/10,
-html.light main > footer .bg-white\/10 {
+html.light main > section > section [class~="bg-white/10"],
+html.light main > footer [class~="bg-white/10"] {
   background-color: rgba(15,23,42,.05) !important;
 }
 html.light main > section > section .text-transparent {
@@ -269,4 +269,38 @@ html.light main > footer .text-white svg {
 html.light main > section > section svg.text-white,
 html.light main > footer svg.text-white {
   color: #fff !important;
+}
+
+/* Footer theme support: the footer is a sibling of <main>, not a child of it. */
+html.light footer > .absolute.inset-0 {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 55%, #f8fafc 100%) !important;
+}
+html.light footer .text-white {
+  color: #172033 !important;
+}
+html.light footer .text-slate-200,
+html.light footer .text-slate-300,
+html.light footer .text-slate-400,
+html.light footer .text-slate-500 {
+  color: #475569 !important;
+}
+html.light footer .text-blue-400 {
+  color: #1d4ed8 !important;
+}
+html.light footer .text-emerald-400 {
+  color: #047857 !important;
+}
+html.light footer [class~="bg-white/10"] {
+  background-color: rgba(15, 23, 42, 0.06) !important;
+}
+html.light footer [class~="border-white/20"] {
+  border-color: rgba(15, 23, 42, 0.16) !important;
+}
+
+/* Attribute selectors avoid escaping Tailwind's punctuation in CSS selectors. */
+html.light footer [class~="hover:text-white"]:hover {
+  color: #0f172a !important;
+}
+html.light footer [class~="hover:bg-blue-500/20"]:hover {
+  background-color: rgba(37, 99, 235, 0.12) !important;
 }

@@ -2,60 +2,59 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Code, UserCheck, Brain, Globe, Lock, ArrowRight, Sparkles, Zap } from "lucide-react"
+import { Shield, Code, UserCheck, Brain, Globe, ArrowRight, Sparkles, Zap } from "lucide-react"
 import { useState } from "react"
 
 const services = [
   {
     icon: Brain,
-    title: "AI Ethics & Strategy",
-    description:
-      "Comprehensive AI governance, ethical framework development, and responsible AI implementation strategies.",
-    features: ["AI Audit & Assessment", "Ethics Framework Design", "Bias Detection & Mitigation", "AI Governance"],
+    title: "AI Strategy & Implementation",
+    description: "Assess AI readiness, prioritise use cases and plan responsible implementation around measurable business needs.",
+    features: ["AI readiness assessment", "Use-case prioritisation", "Model evaluation & oversight"],
     gradient: "from-purple-500 to-pink-500",
     hoverGradient: "from-purple-600 to-pink-600",
   },
   {
-    icon: Lock,
-    title: "Secure AI Systems",
-    description: "Privacy-preserving AI architectures with advanced security measures and compliance frameworks.",
-    features: ["Federated Learning", "Differential Privacy", "Secure Multi-party Computation", "AI Security Audits"],
-    gradient: "from-red-500 to-orange-500",
-    hoverGradient: "from-red-600 to-orange-600",
-  },
-  {
     icon: Globe,
-    title: "AI-Powered Platforms",
-    description: "End-to-end AI platform development with focus on community empowerment and social impact.",
-    features: ["Machine Learning Platforms", "AI-Driven Analytics", "Intelligent Automation", "Community AI Tools"],
+    title: "Data Science & Analytics",
+    description: "Turn operational data into insight through analytical models, reporting and decision-support workflows.",
+    features: ["Data assessment", "Predictive modelling", "Analytics & dashboards"],
     gradient: "from-emerald-500 to-teal-500",
     hoverGradient: "from-emerald-600 to-teal-600",
   },
   {
     icon: Code,
-    title: "Custom AI Development",
-    description: "Bespoke AI solutions tailored to your specific needs with ethical design principles.",
-    features: ["Natural Language Processing", "Computer Vision", "Predictive Analytics", "AI Integration"],
+    title: "Software & Product Engineering",
+    description: "Design and build web platforms, workflow tools and integrations around defined product and business requirements.",
+    features: ["Product discovery", "Web applications & APIs", "Testing & deployment"],
     gradient: "from-blue-500 to-cyan-500",
     hoverGradient: "from-blue-600 to-cyan-600",
   },
   {
-    icon: UserCheck,
-    title: "AI Identity & Trust",
-    description: "Advanced identity verification and trust systems powered by ethical AI technologies.",
-    features: ["Biometric Authentication", "Behavioral Analysis", "Trust Scoring", "Identity Protection"],
+    icon: Shield,
+    title: "Cybersecurity & Responsible Technology",
+    description: "Consider security, privacy, access control and accountability throughout technology planning and delivery.",
+    features: ["Security & privacy reviews", "Access-control guidance", "Responsible AI practices"],
+    gradient: "from-red-500 to-orange-500",
+    hoverGradient: "from-red-600 to-orange-600",
+  },
+  {
+    icon: Zap,
+    title: "Automation & Digital Transformation",
+    description: "Improve operational workflows by connecting systems and reducing repetitive manual processes.",
+    features: ["Process mapping", "Workflow automation", "System integration"],
     gradient: "from-amber-500 to-yellow-500",
     hoverGradient: "from-amber-600 to-yellow-600",
   },
   {
-    icon: Shield,
-    title: "AI Content Moderation",
-    description: "Intelligent content moderation systems that balance safety with freedom of expression.",
-    features: ["Real-time Moderation", "Context-Aware AI", "Multi-language Support", "Appeal Systems"],
+    icon: UserCheck,
+    title: "Technology Advisory",
+    description: "Support leadership teams with technical discovery, architecture assessment and delivery planning.",
+    features: ["Requirements discovery", "Architecture assessment", "Delivery oversight"],
     gradient: "from-indigo-500 to-purple-500",
     hoverGradient: "from-indigo-600 to-purple-600",
   },
-]
+
 
 export function ServicesSection() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
@@ -77,8 +76,7 @@ export function ServicesSection() {
             Technology Solutions for Business
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            We provide cutting-edge AI consulting and development services designed to help organizations harness the
-            power of artificial intelligence while maintaining ethical standards and human-centered values.
+            We help organisations assess opportunities, design digital solutions and deliver practical technology—with responsible AI, security and human oversight built into the process.
           </p>
         </div>
 
@@ -127,8 +125,7 @@ export function ServicesSection() {
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-heading">Have a technology challenge to solve?</h3>
               <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto">
-                Let's discuss how B9Tech can help your organization leverage ethical AI to solve complex challenges and
-                create meaningful impact.
+                Let's discuss your organisation's requirements, desired outcomes and delivery constraints.
               </p>
               <Button
                 size="lg"

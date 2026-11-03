@@ -18,31 +18,13 @@ import {
 } from "@/components/ui/sidebar"
 
 const navigationItems = [
-  {
-    title: "Home",
-    url: "#home",
-    icon: Home,
-  },
-  {
-    title: "About Us",
-    url: "#about",
-    icon: Users,
-  },
-  {
-    title: "B3 Project",
-    url: "#b3",
-    icon: ExternalLink,
-  },
-  {
-    title: "Our Services",
-    url: "#services",
-    icon: Briefcase,
-  },
-  {
-    title: "Contact",
-    url: "#contact",
-    icon: Phone,
-  },
+  { title: "Home", url: "/#home", icon: Home },
+  { title: "About Us", url: "/#about", icon: Users },
+  { title: "B3 Product", url: "/#b3", icon: ExternalLink },
+  { title: "Technology Services", url: "/#services", icon: Briefcase },
+  { title: "Enterprise Solutions", url: "/enterprise", icon: Building2 },
+  { title: "Investors & Partners", url: "/investors", icon: TrendingUp },
+  { title: "Contact", url: "/#contact", icon: Phone },
 ]
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
@@ -55,15 +37,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </div>
           <div className="flex flex-col">
             <span className="text-2xl font-bold text-sidebar-foreground leading-tight">B9TECH</span>
-            <span className="text-2xl font-black text-emerald-600 dark:text-emerald-400 leading-tight tracking-wide">
-              CONSULTS
-            </span>
+            <span className="text-2xl font-black text-emerald-600 dark:text-emerald-400 leading-tight tracking-wide">CONSULTS</span>
           </div>
         </div>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+          <SidebarGroupLabel>Corporate</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {navigationItems.map((item) => (

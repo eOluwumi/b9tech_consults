@@ -131,6 +131,34 @@ export function B3Section() {
           </div>
         </div>
       </div>
+
+        <div className="mt-20 border-t border-white/15 pt-16">
+          <div className="mx-auto mb-8 max-w-3xl text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-300">Watch the B3 story</p>
+            <h3 className="mt-3 text-3xl font-bold text-white md:text-4xl">A closer look at BringBackBarter</h3>
+            <p className="mt-4 text-base leading-7 text-slate-300">
+              Explore the story behind B3, B9TECH’s flagship barter marketplace.
+            </p>
+          </div>
+          <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-white/15 bg-black p-2 shadow-2xl">
+            <div className="aspect-video overflow-hidden rounded-xl">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/xO-QVXPeaAw"
+                title="B3: Bring Back Barter video"
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          <p className="mt-4 text-center text-sm text-slate-400">
+            <a href="https://www.youtube.com/watch?v=xO-QVXPeaAw" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-white">
+              Watch directly on YouTube
+            </a>
+          </p>
+        </div>
     </section>
   )
 }

@@ -48,9 +48,9 @@ const services = [
   },
   {
     icon: Code,
-    title: "Digital Systems & Technology Advisory",
-    description: "Clarify technology requirements and plan digital systems, workflows and delivery around organisational priorities.",
-    features: ["Requirements discovery", "Technology planning", "Workflow and systems guidance"],
+    title: "Digital Systems, Security & Automation",
+    description: "Plan and improve digital systems, software, secure technology practices and operational workflows around organisational priorities.",
+    features: ["Requirements and technology planning", "Software and workflow solutions", "Security, privacy and automation guidance"],
     gradient: "from-red-500 to-orange-500",
     hoverGradient: "from-red-600 to-orange-600",
   },

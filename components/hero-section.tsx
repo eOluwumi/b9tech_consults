@@ -150,7 +150,7 @@ export function HeroSection() {
             asChild
             className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 animate-glow"
           >
-            <a href="/enterprise"><Sparkles className="mr-3 h-5 w-5" />Explore Consulting Services<ArrowRight className="ml-3 h-5 w-5" /></a>
+            <a href="#services"><Sparkles className="mr-3 h-5 w-5" />Explore Consulting Services<ArrowRight className="ml-3 h-5 w-5" /></a>
           </Button>
           <Button
             size="lg"
@@ -158,7 +158,7 @@ export function HeroSection() {
             asChild
             className="px-10 py-6 text-lg font-semibold rounded-xl border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-md transition-all duration-300 glass"
           >
-            <a href="/investors">Discuss a Consulting Need</a>
+            <a href="#contact">Discuss a Consulting Need</a>
           </Button>
         </div>
 

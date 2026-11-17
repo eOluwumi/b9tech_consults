@@ -7,52 +7,52 @@ import { useState } from "react"
 
 const services = [
   {
-    icon: Brain,
-    title: "AI Strategy & Implementation",
-    description: "Assess AI readiness, prioritise use cases and plan responsible implementation around measurable business needs.",
-    features: ["AI readiness assessment", "Use-case prioritisation", "Model evaluation & oversight"],
-    gradient: "from-purple-500 to-pink-500",
-    hoverGradient: "from-purple-600 to-pink-600",
-  },
-  {
-    icon: Globe,
-    title: "Data Science & Analytics",
-    description: "Turn operational data into insight through analytical models, reporting and decision-support workflows.",
-    features: ["Data assessment", "Predictive modelling", "Analytics & dashboards"],
-    gradient: "from-emerald-500 to-teal-500",
-    hoverGradient: "from-emerald-600 to-teal-600",
-  },
-  {
-    icon: Code,
-    title: "Software & Product Engineering",
-    description: "Design and build web platforms, workflow tools and integrations around defined product and business requirements.",
-    features: ["Product discovery", "Web applications & APIs", "Testing & deployment"],
+    icon: Shield,
+    title: "IT Support Operations",
+    description: "Keep day-to-day office technology dependable with practical support that can also be delivered remotely.",
+    features: ["Office IT support", "Remote troubleshooting", "Operational technology guidance"],
     gradient: "from-blue-500 to-cyan-500",
     hoverGradient: "from-blue-600 to-cyan-600",
   },
   {
-    icon: Shield,
-    title: "Cybersecurity & Responsible Technology",
-    description: "Consider security, privacy, access control and accountability throughout technology planning and delivery.",
-    features: ["Security & privacy reviews", "Access-control guidance", "Responsible AI practices"],
-    gradient: "from-red-500 to-orange-500",
-    hoverGradient: "from-red-600 to-orange-600",
+    icon: Globe,
+    title: "Technology Procurement",
+    description: "Get support with technology sourcing and procurement, informed by hands-on experience serving BriaTek Computers in Gombe State and other procurement work.",
+    features: ["Technology requirements", "Sourcing support", "Procurement solutions"],
+    gradient: "from-emerald-500 to-teal-500",
+    hoverGradient: "from-emerald-600 to-teal-600",
+  },
+  {
+    icon: Brain,
+    title: "Research & Implementation",
+    description: "Explore empirical and cognitive questions, then connect findings to implementation themes and practical decisions.",
+    features: ["Empirical research", "Cognitive inquiry", "Implementation-oriented analysis"],
+    gradient: "from-purple-500 to-pink-500",
+    hoverGradient: "from-purple-600 to-pink-600",
   },
   {
     icon: Zap,
-    title: "Automation & Digital Transformation",
-    description: "Improve operational workflows by connecting systems and reducing repetitive manual processes.",
-    features: ["Process mapping", "Workflow automation", "System integration"],
+    title: "Data Science, Mechanistic Interpretation & XAI",
+    description: "Use data science to investigate patterns and explain how analytical models reach their results.",
+    features: ["Data analysis", "Mechanistic interpretation", "Explainable AI (XAI)"],
     gradient: "from-amber-500 to-yellow-500",
     hoverGradient: "from-amber-600 to-yellow-600",
   },
   {
     icon: UserCheck,
-    title: "Technology Advisory",
-    description: "Support leadership teams with technical discovery, architecture assessment and delivery planning.",
-    features: ["Requirements discovery", "Architecture assessment", "Delivery oversight"],
+    title: "AI Advisory & Implementation",
+    description: "Assess where AI can help, select useful applications and plan responsible implementation around real needs.",
+    features: ["Use-case assessment", "AI implementation planning", "Model interpretation and oversight"],
     gradient: "from-indigo-500 to-purple-500",
     hoverGradient: "from-indigo-600 to-purple-600",
+  },
+  {
+    icon: Code,
+    title: "Digital Systems & Technology Advisory",
+    description: "Clarify technology requirements and plan digital systems, workflows and delivery around organisational priorities.",
+    features: ["Requirements discovery", "Technology planning", "Workflow and systems guidance"],
+    gradient: "from-red-500 to-orange-500",
+    hoverGradient: "from-red-600 to-orange-600",
   },
 ]
 
@@ -70,13 +70,13 @@ export function ServicesSection() {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full mb-8">
             <Sparkles className="h-5 w-5 text-blue-400" />
-            <span className="text-blue-300 font-semibold">Enterprise Technology Capabilities</span>
+            <span className="text-blue-300 font-semibold">Consulting Services</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent font-heading">
-            Technology Solutions for Business
+            Practical Support for Organisations
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            We help organisations assess opportunities, design digital solutions and deliver practical technology—with responsible AI, security and human oversight built into the process.
+            From day-to-day IT operations and technology procurement to applied research, data science and AI, B9TECH CONSULTS helps turn specific organisational needs into practical next steps.
           </p>
         </div>
 

@@ -59,7 +59,7 @@ const scrollToSection = (sectionId: string) => {
 
 export function HeroSection() {
   const [currentWord, setCurrentWord] = useState(0)
-  const words = ["Responsible", "Practical", "Secure", "Human-Centred"]
+  const words = ["Practical", "Reliable", "Research-Led", "Human-Centred"]
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -110,7 +110,7 @@ export function HeroSection() {
                   B9TECH CONSULTS
                 </span>
               </h1>
-              <p className="text-blue-300 font-semibold text-lg">Responsible Technology & AI</p>
+              <p className="text-blue-300 font-semibold text-lg">Technology, Operations & Research</p>
             </div>
           </div>
         </div>
@@ -135,10 +135,10 @@ export function HeroSection() {
                 </span>
               </span>
               <br />
-              Technology Solutions
+              Consulting Solutions
             </h2>
             <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              B9TECH CONSULTS helps organisations apply responsible AI, build secure digital systems and turn technology opportunities into practical outcomes.
+              B9TECH CONSULTS helps organisations solve practical technology and operations challenges through IT support, procurement, applied research and data science. AI and explainable AI are part of that wider consulting practice.
             </p>
           </div>
         </div>
@@ -150,7 +150,7 @@ export function HeroSection() {
             asChild
             className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 animate-glow"
           >
-            <a href="/enterprise"><Sparkles className="mr-3 h-5 w-5" />Explore Enterprise Solutions<ArrowRight className="ml-3 h-5 w-5" /></a>
+            <a href="#services"><Sparkles className="mr-3 h-5 w-5" />Explore Consulting Services<ArrowRight className="ml-3 h-5 w-5" /></a>
           </Button>
           <Button
             size="lg"
@@ -158,7 +158,7 @@ export function HeroSection() {
             asChild
             className="px-10 py-6 text-lg font-semibold rounded-xl border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-md transition-all duration-300 glass"
           >
-            <a href="/investors">Investor & Partner Overview</a>
+            <a href="#contact">Discuss a Consulting Need</a>
           </Button>
         </div>
 
@@ -166,33 +166,33 @@ export function HeroSection() {
         <div className="grid md:grid-cols-4 gap-6 mt-20">
           {[
             {
-              icon: Brain,
-              title: "AI Ethics",
-              desc: "Responsible AI development",
-              color: "from-blue-500 to-purple-500",
+              icon: Shield,
+              title: "IT Support Operations",
+              desc: "Office-based and remote technology support",
+              color: "from-blue-500 to-cyan-500",
               section: "services",
             },
             {
-              icon: Shield,
-              title: "Secure Systems",
-              desc: "Privacy-first architecture",
+              icon: Globe,
+              title: "Technology Procurement",
+              desc: "Practical sourcing and procurement support",
+              color: "from-emerald-500 to-teal-500",
+              section: "services",
+            },
+            {
+              icon: Brain,
+              title: "Research & Data Science",
+              desc: "Empirical inquiry, analysis and XAI",
               color: "from-purple-500 to-pink-500",
               section: "services",
             },
             {
               icon: Zap,
-              title: "Innovation",
-              desc: "Cutting-edge solutions",
-              color: "from-green-500 to-blue-500",
-              section: "b3",
-            },
-            {
-              icon: Globe,
-              title: "Local Context",
-              desc: "Technology grounded in real needs",
-              color: "from-pink-500 to-orange-500",
+              title: "Applied Technology",
+              desc: "Solutions shaped around real needs",
+              color: "from-amber-500 to-orange-500",
               section: "about",
-            },
+            }
           ].map((feature, index) => (
             <Card
               key={index}

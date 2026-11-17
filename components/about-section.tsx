@@ -17,13 +17,13 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6">
             <Sparkles className="h-4 w-4 text-blue-400" />
-            <span className="text-blue-300 font-medium">About Our Leadership</span>
+            <span className="text-blue-300 font-medium">About the Consultant</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">
-            Advancing <span className="text-blue-400">Responsible Technology</span>
+            Technology, Operations & <span className="text-blue-400">Applied Research</span>
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Meet the founder shaping B9TECH CONSULTS' approach to responsible technology
+            Meet the consultant behind B9TECH CONSULTS' practical, research-informed approach
           </p>
         </div>
 
@@ -58,25 +58,19 @@ export function AboutSection() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-2 font-heading">Enoch Oluwumi</h3>
               <p className="text-xl text-blue-400 font-semibold mb-6">
-                Founder & Chief Executive Officer
+                Consultant | Data Scientist
               </p>
               <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                Building practical, responsible technology
+                Supporting IT operations, procurement, research and data science
               </p>
             </div>
 
             <div className="space-y-6">
               <p className="text-slate-300 leading-relaxed">
-                Enoch Oluwumi leads B9TECH CONSULTS with a focus on responsible technology, practical AI adoption and digital systems that
-                serve people. His work brings together technical problem-solving and an emphasis on privacy, transparency and human oversight. With an understanding of AI
-                capabilities and the social responsibility that comes with them, he guides B9TECH CONSULTS in developing
-                responsible technology.
+                Enoch Oluwumi is a data scientist and technology consultant whose work spans IT support operations, procurement, applied research and AI. He has procurement experience serving BriaTek Computers in Gombe State, alongside other procurement solutions. His IT support practice is grounded in office operations and can also be delivered remotely.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                B9TECH CONSULTS applies these principles to its product work and technology services. Its approach is to understand the operational problem first, define a realistic scope, and
-                build with security, usability and accountability in view. The company prioritises
-                practical innovation and responsible AI adoption for organisations in Africa and
-                beyond.
+                His research practice covers empirical, cognitive and implementation themes. In data science, he brings mechanistic interpretation and explainable AI (XAI) to help make analytical results more understandable and useful. B9TECH CONSULTS brings these capabilities together to address practical organisational needs.
               </p>
             </div>
 
@@ -115,9 +109,7 @@ export function AboutSection() {
                 <Users className="h-12 w-12 text-blue-400 mx-auto mb-6 animate-float" />
                 <h3 className="text-2xl font-bold text-white mb-4 font-heading">Our Mission</h3>
                 <p className="text-lg text-slate-300 max-w-4xl mx-auto leading-relaxed">
-                  "At B9TECH CONSULTS, we believe technology should serve humanity, not the other way around. Our
-                  mission is to develop AI solutions that respect privacy, promote transparency, and empower communities
-                  to thrive in the digital age. We're not just building software – we're building a better future."
+                  "B9TECH CONSULTS helps organisations solve practical problems through dependable IT support, informed procurement, applied research and data science. We use technology thoughtfully, with AI as one useful part of a broader consulting practice."
                 </p>
                 <div className="mt-6">
                   <span className="text-blue-400 font-semibold">— Enoch Oluwumi, CEO</span>

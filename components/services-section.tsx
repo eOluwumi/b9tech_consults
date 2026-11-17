@@ -32,7 +32,7 @@ const services = [
   },
   {
     icon: Zap,
-    title: "Data Science, Mechanistic Interpretation & XAI",
+    title: "Data Science & Explainable AI",
     description: "Use data science to investigate patterns and explain how analytical models reach their results.",
     features: ["Data analysis", "Mechanistic interpretation", "Explainable AI (XAI)"],
     gradient: "from-amber-500 to-yellow-500",

@@ -11,11 +11,11 @@ const siteUrl = "https://b9tech.barternaija.com.ng"
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "B9TECH CONSULTS | Enterprise Technology & Responsible AI",
+    default: "B9TECH CONSULTS | IT Support, Procurement, Research & Data Science",
     template: "%s | B9TECH CONSULTS",
   },
   description:
-    "B9TECH CONSULTS is a Nigerian technology consultancy focused on enterprise AI strategy, data science, secure digital systems, software engineering and responsible digital transformation.",
+    "B9TECH CONSULTS is a Nigerian consulting practice offering IT support operations, technology procurement, applied research, data science, mechanistic interpretation and explainable AI.",
   alternates: {
     canonical: "/",
   },
@@ -23,15 +23,15 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "B9TECH CONSULTS",
-    title: "B9TECH CONSULTS | Enterprise Technology & Responsible AI",
+    title: "B9TECH CONSULTS | IT Support, Procurement, Research & Data Science",
     description:
-      "Enterprise AI, data science, secure digital systems and responsible technology delivery from Nigeria.",
+      "IT support operations, technology procurement, applied research and data science consulting from Nigeria.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "B9TECH CONSULTS | Enterprise Technology & Responsible AI",
+    title: "B9TECH CONSULTS | IT Support, Procurement, Research & Data Science",
     description:
-      "Enterprise AI, data science, secure digital systems and responsible technology delivery from Nigeria.",
+      "IT support operations, technology procurement, applied research and data science consulting from Nigeria.",
   },
   robots: {
     index: true,

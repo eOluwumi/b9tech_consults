@@ -2,7 +2,7 @@
   "name": "b9tech-conglomerate",
   "version": "0.1.0",
   "private": true,
-  "description": "B9TECH CONSULTS website for ethical AI solutions and the live B3 BringBackBarter platform.",
+  "description": "B9TECH CONSULTS: cybersecurity, AI and data science, digital infrastructure, applied research, and B3 product development.",
   "scripts": {
     "build": "next build",
     "dev": "next dev",

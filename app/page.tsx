@@ -42,14 +42,12 @@ export default function HomePage() {
           }`}
         >
           <SidebarTrigger className="-ml-1" />
-
-          {/* Sticky Logo */}
           <div
-            className={`flex items-center gap-4 ml-4 transition-all duration-300 ${
-              isScrolled ? "opacity-100 scale-100" : "opacity-0 scale-95"
+            className={`ml-4 flex items-center gap-4 transition-all duration-300 ${
+              isScrolled ? "scale-100 opacity-100" : "scale-95 opacity-0"
             }`}
           >
-            <div className="relative h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 via-blue-500 to-purple-500 p-2 shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300">
+            <div className="relative h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 via-blue-500 to-purple-500 p-2 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl">
               <Image
                 src="/images/b9-logo-main.png"
                 alt="B9TECH Logo"
@@ -59,16 +57,15 @@ export default function HomePage() {
             </div>
             <div className="hidden sm:block">
               <div className="flex flex-col">
-                <span className="text-xl font-black bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 dark:from-emerald-400 dark:via-blue-400 dark:to-purple-400 bg-clip-text text-transparent tracking-tight hover:scale-105 transition-transform duration-300 cursor-default">
+                <span className="bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-xl font-black tracking-tight text-transparent transition-transform duration-300 hover:scale-105 dark:from-emerald-400 dark:via-blue-400 dark:to-purple-400">
                   B9TECH
                 </span>
-                <span className="text-lg font-bold bg-gradient-to-r from-purple-600 via-emerald-600 to-blue-600 dark:from-purple-400 dark:via-emerald-400 dark:to-blue-400 bg-clip-text text-transparent tracking-wide hover:scale-105 transition-transform duration-300 cursor-default -mt-1">
+                <span className="-mt-1 bg-gradient-to-r from-purple-600 via-emerald-600 to-blue-600 bg-clip-text text-lg font-bold tracking-wide text-transparent transition-transform duration-300 hover:scale-105 dark:from-purple-400 dark:via-emerald-400 dark:to-blue-400">
                   CONSULTS
                 </span>
               </div>
             </div>
           </div>
-
           <div className="ml-auto">
             <ThemeToggle />
           </div>
@@ -80,11 +77,11 @@ export default function HomePage() {
           <section id="about">
             <AboutSection />
           </section>
-          <section id="b3">
-            <B3Section />
-          </section>
           <section id="services">
             <ServicesSection />
+          </section>
+          <section id="b3">
+            <B3Section />
           </section>
           <section id="testimonials">
             <TestimonialsSection />

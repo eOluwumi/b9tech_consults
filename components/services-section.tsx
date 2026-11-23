@@ -2,147 +2,89 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Code, UserCheck, Brain, Globe, ArrowRight, Sparkles, Zap } from "lucide-react"
-import { useState } from "react"
+import { ShieldCheck, Brain, Network, FlaskConical, ArrowRight, CheckCircle2 } from "lucide-react"
 
-const services = [
+const capabilities = [
   {
-    icon: Shield,
-    title: "IT Support Operations",
-    description: "Keep day-to-day office technology dependable with practical support that can also be delivered remotely.",
-    features: ["Office IT support", "Remote troubleshooting", "Operational technology guidance"],
-    gradient: "from-blue-500 to-cyan-500",
-    hoverGradient: "from-blue-600 to-cyan-600",
-  },
-  {
-    icon: Globe,
-    title: "Technology Procurement",
-    description: "Get support with technology sourcing and procurement, informed by hands-on experience serving BriaTek Computers in Gombe State and other procurement work.",
-    features: ["Technology requirements", "Sourcing support", "Procurement solutions"],
-    gradient: "from-emerald-500 to-teal-500",
-    hoverGradient: "from-emerald-600 to-teal-600",
+    icon: ShieldCheck,
+    title: "Cybersecurity & Resilience",
+    intro: "Understand exposure, strengthen controls and improve the resilience of digital environments.",
+    work: ["Infrastructure and security posture reviews", "Threat, vulnerability and risk analysis", "Security hardening and remediation planning", "Resilience and incident-readiness guidance"],
+    deliverable: "A prioritised findings report with practical remediation actions.",
   },
   {
     icon: Brain,
-    title: "Research & Implementation",
-    description: "Explore empirical and cognitive questions, then connect findings to implementation themes and practical decisions.",
-    features: ["Empirical research", "Cognitive inquiry", "Implementation-oriented analysis"],
-    gradient: "from-purple-500 to-pink-500",
-    hoverGradient: "from-purple-600 to-pink-600",
+    title: "AI & Data Science",
+    intro: "Use data and intelligent systems to support better decisions—with attention to interpretability and reliability.",
+    work: ["Data analysis, modelling and visualisation", "Business intelligence and decision-support dashboards", "Machine-learning evaluation and explainability", "AI use-case assessment and implementation planning"],
+    deliverable: "An analysis, dashboard, model evaluation or actionable AI roadmap.",
   },
   {
-    icon: Zap,
-    title: "Data Science & Explainable AI",
-    description: "Use data science to investigate patterns and explain how analytical models reach their results.",
-    features: ["Data analysis", "Mechanistic interpretation", "Explainable AI (XAI)"],
-    gradient: "from-amber-500 to-yellow-500",
-    hoverGradient: "from-amber-600 to-yellow-600",
+    icon: Network,
+    title: "Digital Infrastructure",
+    intro: "Make the technology environment more dependable, maintainable and fit for organisational needs.",
+    work: ["IT operations and technical support", "Infrastructure and systems assessment", "Technology requirements and procurement support", "Systems integration and workflow automation"],
+    deliverable: "A practical infrastructure plan, implementation support or operational improvement.",
   },
   {
-    icon: UserCheck,
-    title: "AI Advisory & Implementation",
-    description: "Assess where AI can help, select useful applications and plan responsible implementation around real needs.",
-    features: ["Use-case assessment", "AI implementation planning", "Model interpretation and oversight"],
-    gradient: "from-indigo-500 to-purple-500",
-    hoverGradient: "from-indigo-600 to-purple-600",
-  },
-  {
-    icon: Code,
-    title: "Digital Systems, Security & Automation",
-    description: "Plan and improve digital systems, software, secure technology practices and operational workflows around organisational priorities.",
-    features: ["Requirements and technology planning", "Software and workflow solutions", "Security, privacy and automation guidance"],
-    gradient: "from-red-500 to-orange-500",
-    hoverGradient: "from-red-600 to-orange-600",
+    icon: FlaskConical,
+    title: "Applied Research",
+    intro: "Investigate complex technical questions and translate evidence into decisions, prototypes and improvements.",
+    work: ["Technical research and problem framing", "Experimental design and evaluation", "AI safety and model robustness research", "Technical documentation and implementation studies"],
+    deliverable: "A research brief, evaluation report, prototype or evidence-based recommendation.",
   },
 ]
 
 export function ServicesSection() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
-
   return (
-    <section id="services" className="py-20 px-6 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-slate-900 to-purple-900">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=&quot;100&quot; height=&quot;100&quot; viewBox=&quot;0 0 100 100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cpath d=&quot;M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z&quot; fill=&quot;%23ffffff&quot; fillOpacity=&quot;0.05&quot; fillRule=&quot;evenodd&quot;/%3E%3C/svg%3E')] opacity-30"></div>
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full mb-8">
-            <Sparkles className="h-5 w-5 text-blue-400" />
-            <span className="text-blue-300 font-semibold">Consulting Services</span>
-          </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent font-heading">
-            Practical Support for Organisations
-          </h2>
-          <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            From day-to-day IT operations and technology procurement to applied research, data science and AI, B9TECH CONSULTS helps turn specific organisational needs into practical next steps.
+    <section id="services" className="relative overflow-hidden bg-slate-950 px-6 py-24">
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-blue-950/30 to-slate-950" />
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="mx-auto mb-16 max-w-3xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">What we do</p>
+          <h2 className="text-4xl font-bold text-white md:text-5xl">Four capabilities. One integrated technical practice.</h2>
+          <p className="mt-6 text-lg leading-8 text-slate-300">
+            B9TECH works across the systems organisations depend on, the data they use, the risks they face and the questions they need to investigate.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card
-              key={index}
-              className="glass border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group cursor-pointer animate-float"
-              style={{ animationDelay: `${index * 0.1}s` }}
-              onMouseEnter={() => setHoveredCard(index)}
-              onMouseLeave={() => setHoveredCard(null)}
-            >
+        <div className="grid gap-6 lg:grid-cols-2">
+          {capabilities.map(({ icon: Icon, title, intro, work, deliverable }, index) => (
+            <Card key={title} className="h-full border-white/10 bg-white/[0.04] text-white transition-colors hover:border-blue-400/40 hover:bg-white/[0.06]">
               <CardHeader className="pb-4">
-                <div
-                  className={`w-16 h-16 bg-gradient-to-br ${hoveredCard === index ? service.hoverGradient : service.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg transition-all duration-300 group-hover:scale-110 animate-glow`}
-                >
-                  <service.icon className="h-8 w-8 text-white" />
+                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/15 text-blue-300">
+                  <Icon className="h-6 w-6" />
                 </div>
-                <CardTitle className="text-xl text-white group-hover:text-blue-400 transition-colors font-heading">
-                  {service.title}
-                </CardTitle>
+                <p className="text-xs font-semibold uppercase tracking-widest text-blue-300">0{index + 1} · Capability</p>
+                <CardTitle className="text-2xl text-white">{title}</CardTitle>
+                <p className="pt-2 leading-7 text-slate-300">{intro}</p>
               </CardHeader>
               <CardContent className="space-y-6">
-                <p className="text-slate-300 leading-relaxed">{service.description}</p>
-                <div className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center gap-3 text-sm text-slate-400">
-                      <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse"></div>
-                      <span>{feature}</span>
+                <div className="space-y-3">
+                  {work.map((item) => (
+                    <div key={item} className="flex items-start gap-3 text-sm leading-6 text-slate-300">
+                      <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-blue-300" />
+                      <span>{item}</span>
                     </div>
                   ))}
+                </div>
+                <div className="rounded-xl border border-blue-400/20 bg-blue-400/[0.06] p-4">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-blue-300">Typical outcome</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-200">{deliverable}</p>
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="mt-20 text-center">
-          <Card className="glass border-white/20 shadow-2xl overflow-hidden">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fillRule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fillOpacity=&quot;0.1&quot;%3E%3Ccircle cx=&quot;30&quot; cy=&quot;30&quot; r=&quot;2&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
-            <CardContent className="relative z-10 p-16 text-center">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center animate-glow">
-                  <Zap className="h-8 w-8 text-white" />
-                </div>
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-heading">Have a technology challenge to solve?</h3>
-              <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto">
-                Let's discuss your organisation's requirements, desired outcomes and delivery constraints.
-              </p>
-              <Button
-                size="lg"
-                onClick={() => {
-                  const element = document.getElementById("contact")
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" })
-                  }
-                }}
-                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-glow"
-              >
-                <Sparkles className="mr-3 h-5 w-5" />
-                Discuss an Enterprise Requirement
-                <ArrowRight className="ml-3 h-5 w-5" />
-              </Button>
-            </CardContent>
-          </Card>
+        <div className="mt-16 rounded-2xl border border-white/10 bg-gradient-to-r from-blue-950/70 to-slate-900 p-8 text-center md:p-12">
+          <h3 className="text-2xl font-bold text-white md:text-3xl">Start with the problem. Then choose the right technology.</h3>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-300">
+            Engagements can begin with a focused assessment, a defined research question or a specific implementation need. We clarify scope, deliverables and constraints before work begins.
+          </p>
+          <Button asChild size="lg" className="mt-8 bg-blue-600 text-white hover:bg-blue-700">
+            <a href="#contact">Discuss your requirement <ArrowRight className="ml-2 h-4 w-4" /></a>
+          </Button>
         </div>
       </div>
     </section>

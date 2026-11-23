@@ -1,10 +1,17 @@
 # B9TECH CONSULTS
 
-Production Next.js website for B9TECH CONSULTS, a Nigeria-based technology consultancy and product-development business. The public website presents enterprise technology capabilities and B3: BringBackBarter.
+Website and digital presence for B9TECH CONSULTS, a Nigeria-based technology and applied research consultancy working across four connected capability areas:
+
+- Cybersecurity and resilience
+- AI and data science
+- Digital infrastructure
+- Applied research
+
+The public website also presents B3: BringBackBarter, a B9TECH product initiative currently available as a public prototype while core marketplace workflows remain under development and validation.
 
 ## Public routes
 
-- `/` — corporate homepage
+- `/` — corporate homepage and capability overview
 - `/enterprise` — enterprise capabilities and engagement approach
 - `/investors` — business direction, investment thesis and diligence baseline
 - `/privacy-policy` — published privacy notice (requires review against actual practices)
@@ -42,6 +49,7 @@ See [investor-readiness/README.md](./investor-readiness/README.md). All material
 
 - Do not invent customers, revenue, users, transactions, certifications, partnerships or performance claims.
 - Treat product roadmap statements separately from shipped functionality.
+- Do not describe the B3 public prototype as a fully operational production marketplace.
 - Do not publish draft investor documents without founder approval and supporting evidence.
 - Review privacy and terms content against actual processing and product behaviour with qualified counsel.
 - Keep secrets, credentials and production personal data out of this repository.

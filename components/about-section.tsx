@@ -2,119 +2,90 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Linkedin, Mail, Sparkles, Brain, Shield, Users } from "lucide-react"
+import { Linkedin, Mail, Brain, ShieldCheck, Microscope } from "lucide-react"
 import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 px-6 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fillRule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fillOpacity=&quot;0.05&quot;%3E%3Ccircle cx=&quot;30&quot; cy=&quot;30&quot; r=&quot;2&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6">
-            <Sparkles className="h-4 w-4 text-blue-400" />
-            <span className="text-blue-300 font-medium">About the Consultant</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">
-            Technology, Operations & <span className="text-blue-400">Applied Research</span>
+    <section id="about" className="relative overflow-hidden bg-slate-900 px-6 py-24">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-950" />
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="mb-16 max-w-3xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">Who we are</p>
+          <h2 className="text-4xl font-bold leading-tight text-white md:text-5xl">
+            Analytical thinking. Technical execution. <span className="text-blue-400">Research-led problem solving.</span>
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Meet the consultant behind B9TECH CONSULTS' practical, research-informed approach
+          <p className="mt-6 text-lg leading-8 text-slate-300">
+            B9TECH CONSULTS is a technology and applied research practice working across cybersecurity, AI and data science, digital infrastructure, and technical investigation.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Enhanced Photo Section */}
-          <div className="relative">
-            <div className="relative w-full h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-500 to-purple-500 p-1 animate-glow">
-              <div className="relative w-full h-full rounded-3xl overflow-hidden">
-                <Image
-                  src="/images/exquisite_dp.jpg"
-                  alt="Enoch Oluwumi, Founder and CEO of B9TECH CONSULTS"
-                  fill
-                  className="object-cover object-center"
-                  style={{ objectPosition: "50% 15%" }}
-                />
-                {/* Subtle overlay for better text contrast */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
-              </div>
+        <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="relative mx-auto w-full max-w-md">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 bg-slate-800 shadow-2xl">
+              <Image
+                src="/images/exquisite_dp.jpg"
+                alt="Enoch Oluwumi, Founder of B9TECH CONSULTS"
+                fill
+                className="object-cover"
+                style={{ objectPosition: "50% 15%" }}
+              />
             </div>
-
-            {/* Floating elements */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg animate-float">
-              <Brain className="h-12 w-12 text-white" />
-            </div>
-            <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
-              <Shield className="h-10 w-10 text-white" />
+            <div className="absolute -bottom-5 -right-5 flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-blue-600 shadow-xl">
+              <Brain className="h-8 w-8 text-white" />
             </div>
           </div>
 
-          {/* Content Section */}
-          <div className="space-y-8">
+          <div className="space-y-7">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-2 font-heading">Enoch Oluwumi</h3>
-              <p className="text-xl text-blue-400 font-semibold mb-6">
-                Consultant | Data Scientist
-              </p>
-              <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                Supporting IT operations, procurement, research and data science
-              </p>
+              <h3 className="text-3xl font-bold text-white">Enoch Oluwumi</h3>
+              <p className="mt-2 font-semibold text-blue-300">Founder · Data Scientist · Technology Practitioner</p>
             </div>
+            <p className="leading-8 text-slate-300">
+              With an academic foundation in mathematics and a transition into computer science, Enoch works at the intersection of analytical reasoning, cybersecurity, data science and technology systems. His approach is to understand how a system behaves, where it can fail, and how it can be made more useful, secure and dependable.
+            </p>
+            <p className="leading-8 text-slate-300">
+              His technical interests include cybersecurity, machine learning, explainable AI, and the evaluation of intelligent systems. A developing research focus is technical AI safety—particularly model robustness and resilience: how models behave under challenging conditions, how weaknesses can be identified, and how reliability can be improved.
+            </p>
+            <p className="leading-8 text-slate-300">
+              B9TECH is the practical expression of that wider outlook: a consultancy that connects infrastructure and security with data-driven investigation, responsible AI and applied research.
+            </p>
 
-            <div className="space-y-6">
-              <p className="text-slate-300 leading-relaxed">
-                Enoch Oluwumi is a data scientist and technology consultant whose work spans IT support operations, procurement, applied research and AI. He has procurement experience serving BriaTek Computers in Gombe State, alongside other procurement solutions. His IT support practice is grounded in office operations and can also be delivered remotely.
-              </p>
-              <p className="text-slate-300 leading-relaxed">
-                His research practice covers empirical, cognitive and implementation themes. In data science, he brings mechanistic interpretation and explainable AI (XAI) to help make analytical results more understandable and useful. B9TECH CONSULTS brings these capabilities together to address practical organisational needs.
-              </p>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white animate-glow"
-                asChild
-              >
+            <div className="flex flex-wrap gap-3">
+              <Button asChild className="bg-blue-600 text-white hover:bg-blue-700">
                 <a href="https://ng.linkedin.com/in/enoch-oluwumi-b075a2386" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="mr-2 h-5 w-5" />
-                  Connect on LinkedIn
+                  <Linkedin className="mr-2 h-4 w-4" /> Connect on LinkedIn
                 </a>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="glass border-white/20 text-white hover:bg-white/10 bg-transparent"
-                asChild
-              >
+              <Button asChild variant="outline" className="border-white/25 bg-white/5 text-white hover:bg-white/10">
                 <a href="mailto:enoch@barternaija.com.ng">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Send Message
+                  <Mail className="mr-2 h-4 w-4" /> Contact B9TECH
                 </a>
               </Button>
             </div>
           </div>
         </div>
 
-        {/* Mission Statement */}
-        <div className="mt-20">
-          <Card className="glass border-white/20">
-            <CardContent className="p-8 md:p-12">
-              <div className="text-center">
-                <Users className="h-12 w-12 text-blue-400 mx-auto mb-6 animate-float" />
-                <h3 className="text-2xl font-bold text-white mb-4 font-heading">Our Mission</h3>
-                <p className="text-lg text-slate-300 max-w-4xl mx-auto leading-relaxed">
-                  "B9TECH CONSULTS helps organisations solve practical problems through dependable IT support, informed procurement, applied research and data science. We use technology thoughtfully, with AI as one useful part of a broader consulting practice."
-                </p>
-                <div className="mt-6">
-                  <span className="text-blue-400 font-semibold">— Enoch Oluwumi, CEO</span>
-                </div>
-              </div>
+        <div className="mt-20 grid gap-5 md:grid-cols-3">
+          <Card className="border-white/10 bg-white/[0.04] text-white">
+            <CardContent className="p-7">
+              <ShieldCheck className="mb-4 h-7 w-7 text-blue-300" />
+              <h3 className="text-lg font-semibold">Security-minded</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-400">Treat security, risk and resilience as core system properties—not features added at the end.</p>
+            </CardContent>
+          </Card>
+          <Card className="border-white/10 bg-white/[0.04] text-white">
+            <CardContent className="p-7">
+              <Brain className="mb-4 h-7 w-7 text-blue-300" />
+              <h3 className="text-lg font-semibold">Evidence-oriented</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-400">Use data, analysis and evaluation to understand problems before prescribing technology.</p>
+            </CardContent>
+          </Card>
+          <Card className="border-white/10 bg-white/[0.04] text-white">
+            <CardContent className="p-7">
+              <Microscope className="mb-4 h-7 w-7 text-blue-300" />
+              <h3 className="text-lg font-semibold">Research-led</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-400">Investigate mechanisms, test assumptions and communicate limitations alongside findings.</p>
             </CardContent>
           </Card>
         </div>

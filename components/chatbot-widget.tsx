@@ -89,7 +89,7 @@ export function ChatbotWidget() {
     }
 
     if (input.includes('contact') || input.includes('reach')) {
-      return "You can reach B9TECH at enoch@barternaija.com.ng or use the contact section on this website. Our office is based in Lagos, Nigeria."
+      return "You can reach B9TECH at enoch@barternaija.com.ng or call/WhatsApp +234 903 075 9382. Call: tel:+2349030759382 | WhatsApp: https://wa.me/2349030759382. Our office is based in Lagos, Nigeria."
     }
 
     if (input.includes('portfolio') || input.includes('projects') || input.includes('work')) {

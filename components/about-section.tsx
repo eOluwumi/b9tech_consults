@@ -13,7 +13,7 @@ export function AboutSection() {
         <div className="mb-16 max-w-3xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-300">Who we are</p>
           <h2 className="text-4xl font-bold leading-tight md:text-5xl">Technology, security and research for real-world systems.</h2>
-          <p className="mt-6 text-lg leading-relaxed text-slate-300">B9TECH CONSULTS is a Nigerian technology company working at the intersection of AI, cybersecurity, data science and digital infrastructure.</p>
+          <p className="mt-6 text-lg leading-relaxed text-slate-300">B9TECH CONSULTS is a Nigerian technology company working at the intersection of artificial intelligence, cybersecurity, data science and digital infrastructure, with an applied research focus on human-centred and trustworthy AI.</p>
         </div>
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative mx-auto w-full max-w-lg">
@@ -30,8 +30,8 @@ export function AboutSection() {
               <h3 className="text-3xl font-bold">Enoch Oluwumi</h3>
               <p className="mt-2 text-lg font-semibold text-blue-300">Founder | Data Scientist | Technology Practitioner</p>
             </div>
-            <p className="leading-relaxed text-slate-300">Enoch's work brings together a mathematical foundation, data science and practical experience in cybersecurity and IT systems. His current technical interests include AI model robustness, evaluation, security and the reliability of intelligent systems.</p>
-            <p className="leading-relaxed text-slate-300">Through B9TECH, these interests inform a broader effort to investigate, design and implement useful technology for organisations operating in real-world conditions. The company combines applied technical work with advisory and implementation engagements.</p>
+            <p className="leading-relaxed text-slate-300">Enoch's work brings together a mathematical foundation, data science and practical experience in cybersecurity and IT systems. His AI interests span human-centred AI, explainable AI, mechanistic interpretability, LLM evaluation, model robustness and technical AI safety.</p>
+            <p className="leading-relaxed text-slate-300">Through B9TECH, these interests inform a broader effort to investigate, evaluate and implement useful technology for organisations operating in real-world conditions, with African contexts in view. The company combines applied research and engineering with advisory and implementation engagements.</p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-blue-600 text-white hover:bg-blue-500"><a href="https://ng.linkedin.com/in/enoch-oluwumi-b075a2386" target="_blank" rel="noopener noreferrer"><Linkedin className="mr-2 h-5 w-5" /> Connect on LinkedIn</a></Button>
               <Button asChild size="lg" variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/10"><a href="mailto:enoch@barternaija.com.ng"><Mail className="mr-2 h-5 w-5" /> Contact B9TECH</a></Button>

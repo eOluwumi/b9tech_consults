@@ -1,7 +1,7 @@
 "use client"
 
 import type * as React from "react"
-import { Home, Users, Briefcase, Phone, ExternalLink, Building2, TrendingUp } from "lucide-react"
+import { Home, Users, Briefcase, Phone, ExternalLink, Building2, TrendingUp, BrainCircuit, Microscope } from "lucide-react"
 import Image from "next/image"
 
 import {
@@ -19,6 +19,8 @@ import {
 
 const navigationItems = [
   { title: "Home", url: "/#home", icon: Home },
+  { title: "AI Safety & Research", url: "/#research", icon: Microscope },
+  { title: "Core Capabilities", url: "/#capabilities", icon: BrainCircuit },
   { title: "About Us", url: "/#about", icon: Users },
   { title: "B3 Product", url: "/#b3", icon: ExternalLink },
   { title: "Technology Services", url: "/#services", icon: Briefcase },

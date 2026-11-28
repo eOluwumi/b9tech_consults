@@ -66,6 +66,7 @@ export function Footer() {
               <a href="/terms-conditions" className="text-slate-400 transition-colors hover:text-white">Terms & Conditions</a>
             </div>
           </div>
+          <p className="mb-3 text-center text-xs text-slate-500">B9 TECH CONSULT LTD (RC 8493599), trading as B9TECH CONSULTS.</p>
           <p className="mt-10 text-center text-xs text-slate-500">Building technology for useful, responsible outcomes.</p>
         </div>
       </div>

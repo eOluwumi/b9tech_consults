@@ -9,6 +9,7 @@ import {
   HeartHandshake,
   Microscope,
   ShieldCheck,
+  LockKeyhole,
 } from "lucide-react"
 
 const themes = [
@@ -156,6 +157,69 @@ export function ResearchSection() {
                     <p className="text-sm font-semibold">Interpret the results in context</p>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                       These are measurements from one recorded CPU environment, not universal model rankings or a comprehensive measure of answer quality. The framework's response scoring is an early baseline and needs further validation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div id="northstar" className="mt-20 scroll-mt-24">
+          <div className="max-w-4xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700 dark:text-emerald-400">Featured engineering project</p>
+            <h3 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">NorthStar · Workspace Health Monitor & Policy Engine</h3>
+            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+              A dependency-free, local-first Node.js utility that checks workspace health, evaluates application-level operation policies and records decisions in a tamper-evident, hash-chained audit log.
+            </p>
+          </div>
+          <Card className="mt-8 overflow-hidden border-border bg-card">
+            <CardContent className="p-0">
+              <div className="grid gap-0 lg:grid-cols-[1fr_1fr]">
+                <div className="p-7 md:p-9">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+                    <LockKeyhole className="h-4 w-4" /> Security-conscious systems engineering
+                  </div>
+                  <h4 className="mt-4 text-2xl font-bold">Make operations observable and policy-aware.</h4>
+                  <p className="mt-3 leading-relaxed text-muted-foreground">
+                    NorthStar validates required files, directories and tool versions; applies explicit allow, deny and approval-required decisions; and records operational outcomes without storing credential values or arbitrary command output.
+                  </p>
+                  <ul className="mt-6 space-y-3 text-sm leading-relaxed text-muted-foreground">
+                    <li><strong className="text-foreground">Policy engine:</strong> deterministic decisions, scoped approvals and fail-closed handling of unknown operations.</li>
+                    <li><strong className="text-foreground">Audit integrity:</strong> SHA-256 chained JSONL records, legacy-evidence checks and a separate read-only verifier.</li>
+                    <li><strong className="text-foreground">Local-first design:</strong> native Node.js modules, no package installation and no network requests by the utility.</li>
+                    <li><strong className="text-foreground">Test evidence:</strong> repository records 113 passing tests in its 28 November 2026 regression run.</li>
+                  </ul>
+                  <div className="mt-7">
+                    <a href="https://github.com/eOluwumi/northstar" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:underline dark:text-blue-400">
+                      <Github className="h-4 w-4" /> Explore NorthStar on GitHub <ArrowUpRight className="h-4 w-4" />
+                    </a>
+                  </div>
+                </div>
+                <div className="border-t border-border bg-muted/30 p-7 md:p-9 lg:border-l lg:border-t-0">
+                  <h4 className="text-lg font-semibold">What it demonstrates</h4>
+                  <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-xl border border-border bg-background p-4">
+                      <p className="font-semibold">Workspace assurance</p>
+                      <p className="mt-2 text-sm text-muted-foreground">Health reports for required files, directories and supported tool versions.</p>
+                    </div>
+                    <div className="rounded-xl border border-border bg-background p-4">
+                      <p className="font-semibold">Policy governance</p>
+                      <p className="mt-2 text-sm text-muted-foreground">Explicit decisions for file, network, credential, dependency and production operations.</p>
+                    </div>
+                    <div className="rounded-xl border border-border bg-background p-4">
+                      <p className="font-semibold">Audit verification</p>
+                      <p className="mt-2 text-sm text-muted-foreground">Detection of modified, reordered, inserted and interior-deleted records.</p>
+                    </div>
+                    <div className="rounded-xl border border-border bg-background p-4">
+                      <p className="font-semibold">Engineering discipline</p>
+                      <p className="mt-2 text-sm text-muted-foreground">Configuration validation, path confinement checks and failure-oriented tests.</p>
+                    </div>
+                  </div>
+                  <div className="mt-6 rounded-xl border border-amber-500/30 bg-amber-500/5 p-4">
+                    <p className="text-sm font-semibold">Scope and security boundary</p>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      NorthStar is an application-level policy and audit utility, not an operating-system sandbox. Its current implementation is not an LLM or autonomous agent. Hash chaining provides tamper evidence, but a separately protected checkpoint is needed to detect complete chain replacement or loss of uncheckpointed trailing records.
                     </p>
                   </div>
                 </div>

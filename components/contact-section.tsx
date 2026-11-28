@@ -70,7 +70,12 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Phone</h4>
-                    <p className="text-slate-300">+234 812 848 1777</p>
+                    <div className="flex flex-col items-start gap-2">
+                      <a href="tel:+2349030759382" className="text-slate-300 transition-colors hover:text-white">+234 903 075 9382</a>
+                      <a href="https://wa.me/2349030759382" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-emerald-300 transition-colors hover:text-emerald-200">
+                        <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                      </a>
+                    </div>
                   </div>
                 </div>
 

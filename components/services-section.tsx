@@ -37,9 +37,9 @@ const capabilities = [
 
 export function ServicesSection() {
   return (
-    <section id="capabilities" className="relative overflow-hidden bg-background px-6 py-24 text-foreground">
+    <section id="services" className="relative overflow-hidden bg-background px-6 py-24 text-foreground">
       <div className="mx-auto max-w-7xl">
-        <div className="max-w-3xl">
+        <div id="capabilities" className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600 dark:text-blue-400">What we do</p>
           <h2 className="mt-3 text-4xl font-bold tracking-tight md:text-5xl">Four connected capability areas. One technical mission.</h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">B9TECH brings AI, security, data and infrastructure together. We scope engagements around the problem, the evidence required and the delivery capacity—not around a fashionable tool.</p>

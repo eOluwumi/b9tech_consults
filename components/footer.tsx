@@ -1,7 +1,7 @@
 "use client"
 
 import { Separator } from "@/components/ui/separator"
-import { Linkedin, Mail, Phone, Heart } from "lucide-react"
+import { Linkedin, Mail, Phone, Heart, MessageCircle } from "lucide-react"
 import Image from "next/image"
 
 export function Footer() {
@@ -45,7 +45,8 @@ export function Footer() {
               <h4 className="mb-6 font-bold text-white">Contact</h4>
               <div className="space-y-4 text-slate-400">
                 <a href="mailto:enoch@barternaija.com.ng" className="flex items-center gap-3 transition-colors hover:text-white"><Mail className="h-4 w-4 text-emerald-400" />enoch@barternaija.com.ng</a>
-                <a href="tel:+2348128481777" className="flex items-center gap-3 transition-colors hover:text-white"><Phone className="h-4 w-4 text-emerald-400" />+234 812 848 1777</a>
+                <a href="tel:+2349030759382" className="flex items-center gap-3 transition-colors hover:text-white"><Phone className="h-4 w-4 text-emerald-400" />+234 903 075 9382</a>
+                <a href="https://wa.me/2349030759382" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 transition-colors hover:text-white"><MessageCircle className="h-4 w-4 text-emerald-400" />Chat with us on WhatsApp</a>
                 <p>Lagos, Nigeria</p>
                 <div className="flex items-center gap-3 border-t border-white/20 pt-4">
                   <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-blue-400">
